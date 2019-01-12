@@ -16,12 +16,15 @@ The data was acquired from web scrapping techniques in python. I used beautiful 
 
 ![Alt text](listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb/source-website.jpg?raw=true "Source Website")
 
+Ideally, we want information in the following format
 
-
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Property Type  | Property Detial | Property Developer | ...
+| ------------- | ------------- | ------------- | 
+| Condominium  | -  | ... |
+| Single Family Home  | -  | ... |
 
 
 [editor on GitHub](https://github.com/siravich-khongrod/siravich-khongrod.github.io/edit/master/README.md) 
+
+
+[Find me on LinkedIn](https://www.linkedin.com/in/siravich-folk-khongrod/)
