@@ -20,8 +20,8 @@ Ideally, we want information in the following format
 
 | Property Type  | Property Detial | Property Developer | ... |
 | ------------- | ------------- | --- | ------------- | 
-| Condominium  | -  | AP Thai | ... |
-| Single Family Home  | -  | AP Thai | ... |
+| Condominium  | A few steps from the Ekkamai BTS station lies a luxurious comdominium complex...  | AP Thai | ... |
+| Single Family Home  | Cutaway from the busy city of Bangkok, you can enjoy the most of family time...  | AP Thai | ... |
 
 
 [editor on GitHub](https://github.com/siravich-khongrod/siravich-khongrod.github.io/edit/master/README.md) 
