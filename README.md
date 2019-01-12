@@ -18,10 +18,10 @@ The data was acquired from web scrapping techniques in python. I used beautiful 
 
 Ideally, we want information in the following format
 
-| Property Type  | Property Detial | Property Developer | ...
-| ------------- | ------------- | ------------- | 
-| Condominium  | -  | ... |
-| Single Family Home  | -  | ... |
+| Property Type  | Property Detial | Property Developer | ... |
+| ------------- | ------------- | --- | ------------- | 
+| Condominium  | -  | AP Thai | ... |
+| Single Family Home  | -  | AP Thai | ... |
 
 
 [editor on GitHub](https://github.com/siravich-khongrod/siravich-khongrod.github.io/edit/master/README.md) 
