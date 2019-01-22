@@ -1,8 +1,8 @@
 ## Projects
 
 More Upcoming Project
-* <a href="https://github.com/siravich-khongrod/siravich-khongrod.github.io#listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb">Temporal Chicago Crime Interactive Map and Analysis under User-centric hierarchies (R and Shiny module)</a>
-* <a href="https://github.com/siravich-khongrod/siravich-khongrod.github.io#temporal-chicago-crime-interactive-map-and-analysis-under-user-centric-hierarchies-r-and-shiny-module">Listing search tool on leaflet NodeJS web application to query assets in proximity of train station (GeoJSON and MongoDB)</a>
+* <a href="#listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb">Temporal Chicago Crime Interactive Map and Analysis under User-centric hierarchies (R and Shiny module)</a>
+* <a href="#temporal-chicago-crime-interactive-map-and-analysis-under-user-centric-hierarchies-r-and-shiny-module">Listing search tool on leaflet NodeJS web application to query assets in proximity of train station (GeoJSON and MongoDB)</a>
 * Automated Valuation Modeling using Linear Regression Techniques (SAS)
 * Listing search tool on leaflet NodeJS web application to query assets in proximity of train station (GeoJSON and MongoDB)
 * Decentralized Arduino Supervision and Control System for Home Automation
@@ -10,7 +10,7 @@ More Upcoming Project
 * Private Software as a Service using Optware on DD-WRT Custom Firmware Routers
 * Private Cloud Solution for Remote Multimedia Access
 
-#### Listing search tool on leaflet NodeJS web application to query assets in proximity of train station (GeoJSON and MongoDB)
+## Listing search tool on leaflet NodeJS web application to query assets in proximity of train station (GeoJSON and MongoDB)
 
 The purpose of this project is to demonstrate practical application of one of the databases of big data and its feature. The concept is to develop a tool that allow users to search apartments and condominiums within a specific distance from the train station. As we all know, in a highly dense area or the central business district, the location, and to be more specific, the distance to the public transportation is a major factor in purchasing  or renting a condominium. Also, the traffic is pretty extreme in Bangkok so transportation by bus or personal vehicle was not considered.
 
