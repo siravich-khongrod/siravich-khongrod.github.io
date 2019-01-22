@@ -113,3 +113,6 @@ More Upcoming Project
 
 
 [Find me on LinkedIn](https://www.linkedin.com/in/siravich-folk-khongrod/)
+<p align="center">
+<img src="linkedin.png"/>
+</p>
