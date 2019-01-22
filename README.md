@@ -95,6 +95,11 @@ Safety is the most important concern of all. It can be broken down into two aspe
 
 This map however fails to account for explicitly showing the two safety aspects mentioned. The map includes all types of crime which are not relevant to user needs. Thus an interactive map that allows user to switch through crime types would better provide this information. Alternatively, several static maps of different crime types can also answer to these needs.
 
+I contributed the this project in programming visualization in R and by driving team forward to meet deliverable requirements. After teaming with five people through the discussion forum, I’ve set up meetings and agendas and have taken minutes of meeting on three meetups. When it was close to PD2 deadline, we did not have directions as out EDA shows no interesting patterns or correlation on the our hypothesis questions which involves crossing Chicago crime data with other data (eg. census data). I got inspired by making examples of heatmap with Excel using pivot tables,data slicers, and colored auto-formatting.
+<p align="center">
+<img src="temporal-interactive-chicago-crime-map/excel-heatmap.png"/>
+</p>
+
 
 More Upcoming Project
 * Automated Valuation Modeling using Linear Regression Techniques (SAS)
