@@ -37,7 +37,8 @@ Ideally, we want information in the following format
   <img src="listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb/scrape-snippet.jpg" width="600"/>
 </p>
 
-To save this information as JSON format
+To save this information as JSON format, the data is stored as a dictionary
+```
 {     
      "Name":"Life Ladprao"
 ,    "Price":"฿ 2,900,000"
@@ -51,9 +52,21 @@ To save this information as JSON format
 ,    "Date":"July 2018"
 ,    "MRT":"Phahon Yothin"
 }
+```
 
+The data is then converted into GeoJSON format
+```{    "_id":"5b6756ac06e472949300c43b"
+,   "type":"Feature"
+,   "geometry":{       "type":"Point"
+,      "coordinates":[          100.562723,         13.817551      ]   }
+,   "properties":
+{      "Name":"Life Ladprao"
+,      "Price":"2900000"   
+}}
+```
 
-
+Now on to the web application, these are the elements in the main user interface.
+<img src="web-elements.png"/>
 
 ## Temporal Chicago Crime Interactive Map and Analysis under User-centric hierarchies (R and Shiny module)
 
