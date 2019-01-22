@@ -75,12 +75,13 @@ MongoDB is push with query by the following mechanism
 <img src="listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb/code-query-mongodb.png"/>
 </p>
 
-Everything orchestrates into a map user interface that is interactive and displays content is most user friendly way.
+Everything orchestrates into a map user interface that is interactive and displays content is most user friendly way as alike the web elements figure above.
 <p align="center">
 <img src="listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb/nodejs-leaflet-mongo-arch.png"/>
-  <img src="listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb/user-interface.png"/>
 </p>
-
+<p align="center">
+<img src="listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb/user-interface.png"/>
+</p>
 
 ## Temporal Chicago Crime Interactive Map and Analysis under User-centric hierarchies (R and Shiny module)
 
