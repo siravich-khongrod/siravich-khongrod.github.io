@@ -35,7 +35,7 @@ Ideally, we want information in the following format
 
 This project is inspired by my personal experience when I was deciding on which Chicago neighborhood is ideal for renting an apartment. The things i consider are safety, distance to public transportation, distance to downtown and price.
 
-<iframe src="https://www.google.com/maps/d/embed?mid=1LXkb5P2IeZkv6FFTKV2P9Z5hBOA&hl=en_US" width="640" height="480"></iframe>
+<img src="http://i.yochicago.com/images/hpmain/773/285773.jpg?preset=yosize"/>
 
 Safety is the most important concern of all. It can be broken down into two aspects which are in regards to the apartment building and the route from the public transportation to the building. I looked at the no go zone map when I started researching for apartments in Chicago. Here is an example:
 
