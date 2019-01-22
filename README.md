@@ -37,6 +37,21 @@ Ideally, we want information in the following format
   <img src="listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb/scrape-snippet.jpg" width="600"/>
 </p>
 
+To save this information as JSON format
+{
+    "Name":"Life Ladprao"
+,   "Price":"฿ 2,900,000"
+,   "Coordinates":"13.817551,100.562723"
+,   "Property Type":"Condominium"
+,   "Property detail":""
+,   "Property Developer":"AP Public Co.,Ltd."
+,   "Location :"Chatuchak"
+,   "Project Area":"\n  7 Rai 71 sq.w."
+,   "Room":"studio , 1-2 room , Duplex"
+,   "Date":"July 2018"
+,   "MRT":"Phahon Yothin"
+}
+
 
 
 ## Temporal Chicago Crime Interactive Map and Analysis under User-centric hierarchies (R and Shiny module)
