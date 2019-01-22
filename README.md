@@ -55,18 +55,32 @@ To save this information as JSON format, the data is stored as a dictionary
 ```
 
 The data is then converted into GeoJSON format
-```{    "_id":"5b6756ac06e472949300c43b"
-,   "type":"Feature"
-,   "geometry":{       "type":"Point"
-,      "coordinates":[          100.562723,         13.817551      ]   }
-,   "properties":
-{      "Name":"Life Ladprao"
-,      "Price":"2900000"   
-}}
+```{    "_id":"5b6756ac06e472949300c43b"
+,   "type":"Feature"
+,   "geometry":{       "type":"Point"
+,      "coordinates":[          100.562723,         13.817551      ]   }
+,   "properties":
+{      "Name":"Life Ladprao"
+,      "Price":"2900000"   
+}}
 ```
 
 Now on to the web application, these are the elements in the main user interface.
-<img src="web-elements.png"/>
+<p align="center">
+<img src="listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb/web-elements.png"/>
+</p>
+
+MongoDB is push with query by the following mechanism
+<p align="center">
+<img src="listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb/code-query-mongodb.png"/>
+</p>
+
+Everything orchestrates into a map user interface that is interactive and displays content is most user friendly way.
+<p align="center">
+<img src="listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb/nodejs-leaflet-mongo-arch.png"/>
+  <img src="listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb/user-interface.png"/>
+</p>
+
 
 ## Temporal Chicago Crime Interactive Map and Analysis under User-centric hierarchies (R and Shiny module)
 
