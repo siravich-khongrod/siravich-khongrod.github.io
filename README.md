@@ -1,6 +1,6 @@
 ## Projects
 
-Quoted by Michio Kaku, the higher dimensions might be out of bounds of our universe. I believe we are living in the third dimension for having either time or spatial position as the fourth dimension. These choices have always been ambigious and we attempt to visualize these data. This was why I have chosen time series and geospatial data analysis as my electives.
+Quoted by Michio Kaku, the higher dimensions might be out of bounds of our universe. I believe we are living in the third dimension for having either time or spatial position as the fourth dimension. These choices have always been ambigious. Still, we attempt to visualize these data. This was why I have chosen time series and geospatial data analysis as my electives.
 
 Visionary, I am, that I tell myself these are the essential skills that would suffice my career path. Over the past years I have shaped my self to be fully equipted with analytic skills that allow me to further strive to the management role directly involved with the Data Analytics team. 
 
