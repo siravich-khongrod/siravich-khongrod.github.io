@@ -89,19 +89,27 @@ Everything orchestrates into a map user interface that is interactive and displa
 
 This project is inspired by my personal experience when I was deciding on which Chicago neighborhood is ideal for renting an apartment. The things i consider are safety, distance to public transportation, distance to downtown and price.
 
+Safety is the most important concern of all. It can be broken down into two aspects which are in regards to the apartment building and the route from the public transportation to the building. I looked at the no go zone map when I started researching for apartments in Chicago. Here is an example:
+
 <p align="center">
 <img src="http://i.yochicago.com/images/hpmain/773/285773.jpg?preset=yosize"/>
 </p>
 
-Safety is the most important concern of all. It can be broken down into two aspects which are in regards to the apartment building and the route from the public transportation to the building. I looked at the no go zone map when I started researching for apartments in Chicago. Here is an example:
+This map, however, fails to account for explicitly showing the two safety aspects mentioned. The map includes all types of crime which are not relevant to user needs. Thus an interactive map that allows user to switch through crime types would better provide this information. Alternatively, several static maps of different crime types can also answer to these needs.
 
-This map however fails to account for explicitly showing the two safety aspects mentioned. The map includes all types of crime which are not relevant to user needs. Thus an interactive map that allows user to switch through crime types would better provide this information. Alternatively, several static maps of different crime types can also answer to these needs.
-
-I contributed the this project in programming visualization in R and by driving team forward to meet deliverable requirements. After teaming with five people through the discussion forum, I’ve set up meetings and agendas and have taken minutes of meeting on three meetups. When it was close to PD2 deadline, we did not have directions as out EDA shows no interesting patterns or correlation on the our hypothesis questions which involves crossing Chicago crime data with other data (eg. census data). I got inspired by making examples of heatmap with Excel using pivot tables,data slicers, and colored auto-formatting.
+I contributed the this project in programming visualization in R and by driving team forward to meet deliverable requirements. After teaming with five people through the discussion forum, I’ve set up meetings and agendas and have taken minutes of meeting on three meetups. When it was close to project deliverable deadline, we did not have directions as our exploratory data analysis does not show any interesting patterns nor correlation on the our hypothesis questions which is crossing Chicago crime data with other data (eg. census data). I got inspired by making examples of heatmap with Excel using pivot tables, data slicers, and colored auto-formatting as shown below.
 <p align="center">
 <img src="temporal-interactive-chicago-crime-map/excel-heatmap.png"/>
 </p>
 
+The example above shows the occurance of violent crime based on time of the day and day of the week. It was a successful prototype that led to making user centric heirachies that are related to deciding which part of the community area is ideal.
+
+Since it is hard to figure out what would be the user requirements, I made an interactive R program using Shiny module. It generates a HTML page that allow parameters to be adjusted.
+
+<p align="center">
+  <img src="temporal-interactive-chicago-crime-map/chicago-crime-map-loop.png"/>
+  <img src="temporal-interactive-chicago-crime-map/chicago-crime-map-lincoln-park.png"/>
+</p>
 
 More Upcoming Project
 * Automated Valuation Modeling using Linear Regression Techniques (SAS)
