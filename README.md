@@ -77,10 +77,12 @@ MongoDB is push with query by the following mechanism
 <img src="listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb/code-query-mongodb.png"/>
 </p>
 
-Everything orchestrates into a map user interface that is interactive and displays content is most user friendly way as alike the web elements figure above.
+Everything orchestrates into a map user interface that is interactive and displays content is most user friendly.
 <p align="center">
 <img src="listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb/nodejs-leaflet-mongo-arch.png"/>
 </p>
+
+This is the output of a search query
 <p align="center">
 <img src="listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb/user-interface.png"/>
 </p>
@@ -110,6 +112,109 @@ Since it is hard to figure out what would be the user requirements, I made an in
   <img src="temporal-interactive-chicago-crime-map/chicago-crime-map-loop.png"/>
   <img src="temporal-interactive-chicago-crime-map/chicago-crime-map-lincoln-park.png"/>
 </p>
+
+Sample Code:
+
+``` R
+ui <- fluidPage(theme = shinytheme("lumen"),
+                titlePanel("Chicago Crime"),
+                sidebarLayout(
+                  sidebarPanel(
+                    
+                    # Select type of trend to plot
+                    selectInput(inputId = "input_community_area", label = strong("Community Area"),
+                                choices = unique(community_area_centroid$community_area),
+                                selected = "LOOP"),
+                    
+                    sliderInput("month", "Month:",
+                                min = 1, max = 12,
+                                value = c(1,12)),
+
+                    sliderInput("year", "Year:",
+                                min = 2010, max = 2017,
+                                value = c(2017,2017)),
+                    radioButtons("ctype", "Choose one:",
+                                 choiceNames = list(
+                                   "Violent Crime",
+                                   "Property Crime",
+                                   "All Crimes"
+                                 ),
+                                 choiceValues = list(
+                                   "violent", "property", "all"
+                                 ))
+                  ),
+                  
+                  # Output: Description, lineplot, and reference
+                  mainPanel(
+                    plotOutput(outputId = "chicagoCrimeMap", height = "500px")#,
+                    #  textOutput(outputId = "desc"),
+                    #  tags$a(href = "https://www.google.com/finance/domestic_trends", "Source: Google Domestic Trends", target = "_blank")
+                  )
+                )
+)
+
+# Define server function
+server <- function(input, output) {
+  
+  output$chicagoCrimeMap <- renderPlot({
+    
+    # SUBSET DATA
+    crimedata <- crimecsv %>%
+      filter(
+        month >= as.numeric(input$month[1]) & month <=as.numeric(input$month[2]) &
+          year >= as.numeric(input$year[1]) & year <=as.numeric(input$year[2])
+      )
+    if(input$ctype=='violent') {
+      crimedata <- filter(crimedata, Primary.Type=='HOMICIDE'|Primary.Type=='CRIMINAL SEXUAL ASSAULT'|Primary.Type=='ROBBERY'|Primary.Type=='ASSAULT'|Primary.Type=='BATTERY')
+    } else if(input$ctype=='property') {
+      crimedata <- filter(crimedata, Primary.Type=='BURGLARY'|Primary.Type=='LARCENY'|Primary.Type=='MOTOR VEHICLE THEFT'|Primary.Type=='ARSON')
+    }
+    
+    # GET MAP from GOOGLE
+    community_area_coord <- 
+      community_area_centroid[community_area_centroid$community_area==input$input_community_area,]
+    mapImage <- get_map(location = c(lon = community_area_coord$lon, lat = community_area_coord$lat), zoom=13)
+    
+    # DRAW COMMUNITY AREA BORDER
+    area_border <- area
+    area_border <- subset(area_border, community==input$input_community_area)
+    
+    # GET SHAPE WITHIN COMM AREA
+    area2.sub <- raster::intersect(area_border,area2.sub)
+    area2_sub_fortify <- fortify(area2.sub, region = "beat_num")
+    
+    # AGG CRIME DATA
+    coords <- crimedata[c("Longitude","Latitude")]
+    coords <- na.omit(coords)
+    sp <- SpatialPoints(coords)
+    shape_over <- over(sp,area2.sub)
+    by_beat_num <- shape_over %>%
+      group_by(beat_num) %>%
+      summarize(total=n())
+    
+    by_beat_num <- by_beat_num[!is.na(by_beat_num$beat_num),]
+    colnames(by_beat_num) <- c("id","total")
+    by_beat_num$id <- as.character(by_beat_num$id)
+    
+    # JOIN WITH MAP
+    total_map <- left_join(area2_sub_fortify,by_beat_num)
+
+    ggmap(mapImage) +
+      geom_polygon(data = total_map, aes(x=long, y=lat, group=group, fill=total), 
+                   color="black",size=0.5,alpha=0.9) +
+      # scale_fill_gradient(low='white', high='red') +
+      scale_fill_distiller(type="seq", trans="reverse", palette = "Reds") +
+      geom_polygon(data = area_border, aes(x=long, y=lat, group=group, fill=total), 
+                   color = "black", fill=NA, size=1) +
+      labs(fill='Total no. of Crime')  +
+      theme(axis.line=element_blank(),axis.text.x=element_blank(),
+            axis.text.y=element_blank(),axis.ticks=element_blank(),
+            axis.title.x=element_blank(),
+            axis.title.y=element_blank())
+  })
+  
+}
+```
 
 More Upcoming Project
 * Automated Valuation Modeling using Linear Regression Techniques (SAS)
