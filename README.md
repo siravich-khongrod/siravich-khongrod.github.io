@@ -1,6 +1,12 @@
 ## Projects
 
-More Upcoming Project
+While quoted by Michio Kaku, the higher dimensions might be oout of bounds of our universe. I believe we are living in the third dimension for having either time or spapial position as the fourth dimension. These choices have always been ambigious and we attempt to visualize these data. This was why I have chosen time series and geospatial data analysis as my electives.
+
+Visionary, I am, that I tell myself these are the essential skills that would suffice my career path. Over the past years I have shaped my self to be fully equipted with analytic skills that allow me to further strive to the management role directly involved with the Data Analytics team. 
+
+Storytelling, was the one that I pin the essence. The art of conveying complex ideas would connect my world of computing to the ecosystem of business network leading to the future of technology
+
+Project Directory
 * <a href="#listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb">Temporal Chicago Crime Interactive Map and Analysis under User-centric hierarchies (R and Shiny module)</a>
 * <a href="#temporal-chicago-crime-interactive-map-and-analysis-under-user-centric-hierarchies-r-and-shiny-module">Listing search tool on leaflet NodeJS web application to query assets in proximity of train station (GeoJSON and MongoDB)</a>
 * Automated Valuation Modeling using Linear Regression Techniques (SAS)
