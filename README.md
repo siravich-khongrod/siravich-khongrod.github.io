@@ -7,10 +7,10 @@ Visionary, I am, that I tell myself these are the essential skills that would su
 Storytelling, was the one that I pin the essence. This is what I put my best effort towards. I demonstrate this skill by ellaborating through the projects I have developed over the past years. The project ideas are mostly practical, meaning they are in real world application, not only academic or by theory. The art of conveying complex ideas would connect my world of computing to the ecosystem of business network leading to the future of technology.
 
 ## Projects Directory
-* <a href="#listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb">Listing search tool on leaflet NodeJS web application to query assets in proximity of train station (GeoJSON and MongoDB)</a>
+* <a href="#listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb">Listing search tool on Leaflet NodeJS Web Application to Query Assets in Proximity of Train Station (GeoJSON and MongoDB)</a>
 * <a href="#temporal-chicago-crime-interactive-map-and-analysis-under-user-centric-hierarchies-r-and-shiny-module">Temporal Chicago Crime Interactive Map and Analysis under User-centric hierarchies (R and Shiny module)</a>
+* Geospatial Analysis of Market Activity in Response to Transit Development of Bangkok
 * Automated Valuation Modeling using Linear Regression Techniques (SAS)
-* Listing search tool on leaflet NodeJS web application to query assets in proximity of train station (GeoJSON and MongoDB)
 * Decentralized Arduino Supervision and Control System for Home Automation
 * Three Dimension LED Matrix Multiplexing on Arduino Platform
 * Private Software as a Service using Optware on DD-WRT Custom Firmware Routers
