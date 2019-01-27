@@ -9,7 +9,7 @@ Storytelling, was the one that I pin the essence. This is what I put my best eff
 ## Projects Directory
 * <a href="#listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb">Listing search tool on Leaflet NodeJS Web Application to Query Assets in Proximity of Train Station (GeoJSON and MongoDB)</a>
 * <a href="#temporal-chicago-crime-interactive-map-and-analysis-under-user-centric-hierarchies-r-and-shiny-module">Temporal Chicago Crime Interactive Map and Analysis under User-centric hierarchies (R and Shiny module)</a>
-* Geospatial Analysis of Market Activity in Response to Transit Development of Bangkok
+* <a href='./geospatial-analysis.html'>Geospatial Analysis of Market Activity in Response to Transit Development of Bangkok</a> <in progress>
 * Automated Valuation Modeling using Linear Regression Techniques (SAS)
 * Decentralized Arduino Supervision and Control System for Home Automation
 * Three Dimension LED Matrix Multiplexing on Arduino Platform
@@ -64,12 +64,12 @@ The data is then converted into GeoJSON format
 ```
 {   "_id":"5b6756ac06e472949300c43b"
 ,   "type":"Feature"
-,   "geometry":
-{       "type":"Point"
+,   "geometry":{
+        "type":"Point"
 ,       "coordinates":[          100.562723,         13.817551      ]   }
-,   "properties":
-{      "Name":"Life Ladprao"
-,      "Price":"2900000"   }
+,   "properties":{
+        "Name":"Life Ladprao"
+,       "Price":"2900000"   }
 }
 ```
 
