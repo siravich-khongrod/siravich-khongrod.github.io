@@ -9,7 +9,7 @@ Storytelling, was the one that I pin the essence. This is what I put my best eff
 ## Projects Directory
 * <a href="#listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb">Listing search tool on Leaflet NodeJS Web Application to Query Assets in Proximity of Train Station (GeoJSON and MongoDB)</a>
 * <a href="#temporal-chicago-crime-interactive-map-and-analysis-under-user-centric-hierarchies-r-and-shiny-module">Temporal Chicago Crime Interactive Map and Analysis under User-centric hierarchies (R and Shiny module)</a>
-* <a href='./geospatial-analysis.html'>Geospatial Analysis of Market Activity in Response to Transit Development of Bangkok</a> <in progress>
+* <a href='./geospatial-analysis.html'>Geospatial Analysis of Market Activity in Response to Transit Development of Bangkok</a> (in progress)
 * Automated Valuation Modeling using Linear Regression Techniques (SAS)
 * Decentralized Arduino Supervision and Control System for Home Automation
 * Three Dimension LED Matrix Multiplexing on Arduino Platform
