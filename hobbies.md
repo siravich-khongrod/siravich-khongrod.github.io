@@ -6,6 +6,7 @@
 ![](hobbies/bab-castle1.jpg)
 ![](hobbies/bab-castle2.JPG)
 ![](hobbies/bab-castle3.JPG)
+![](hobbies/bicyble.jpg)
 ![](hobbies/assembly.jpg)
 ![](hobbies/dis-castle2.JPG)
 ![](hobbies/dis-castle3.jpg)
