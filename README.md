@@ -28,6 +28,7 @@ The objective is to analyse the market activity of real estate developer from da
 The purpose of this project is to demonstrate practical application of one of the databases of big data and its feature. The concept is to develop a tool that allow users to search apartments and condominiums within a specific distance from the train station. As we all know, in a highly dense area or the central business district, the location, and to be more specific, the distance to the public transportation is a major factor in purchasing  or renting a condominium. 
 
 <a href="listing-search-tool-map.html">**Continue Reading**</a>
+
 <img src="listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb/nodejs-leaflet-mongo-arch.png"/>
 
 ## <a style="color:#159957;" href="temporal-interactive-chicago-crime-map.html">Temporal Chicago Crime Interactive Map and Analysis under User-centric hierarchies (R and Shiny module)</a>
