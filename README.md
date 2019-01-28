@@ -53,7 +53,7 @@ Many home automation systems today rely on a single supervision or central contr
 
 This project proposes a different approach for such system having many units of low computational power control system as nodes distributed across a networked system.
 
-[![classical guitar Alhambra](https://i.ytimg.com/vi/kk5RwZoNmUo/hqdefault.jpg)](https://youtu.be/kk5RwZoNmUo "classical guitar Alhambra")
+[![remote music server](https://i.ytimg.com/vi/kk5RwZoNmUo/hqdefault.jpg)](https://youtu.be/kk5RwZoNmUo "remote music server")
 
 #### More Upcoming Projects
 * Automated Valuation Modeling using Linear Regression Techniques (SAS)
@@ -63,7 +63,6 @@ This project proposes a different approach for such system having many units of 
 * Private Cloud Solution for Remote Multimedia Access
 
 ### [Hobbies](hobbies.html)
-
 
 [editor on GitHub](https://github.com/siravich-khongrod/siravich-khongrod.github.io/edit/master/README.md) 
 
