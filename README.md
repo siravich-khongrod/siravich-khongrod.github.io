@@ -59,8 +59,10 @@ This project proposes a different approach for such system having many units of 
 * Private Software as a Service using Optware on DD-WRT Custom Firmware Routers
 * Private Cloud Solution for Remote Multimedia Access
 
-[editor on GitHub](https://github.com/siravich-khongrod/siravich-khongrod.github.io/edit/master/README.md) 
+### [Hobbies](hobbies.html)
 
+
+[editor on GitHub](https://github.com/siravich-khongrod/siravich-khongrod.github.io/edit/master/README.md) 
 
 [Find me on LinkedIn](https://www.linkedin.com/in/siravich-folk-khongrod/)
 <p align="center">
