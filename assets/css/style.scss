@@ -3,7 +3,8 @@
 
 @import "{{ site.theme }}";
 .page-header {
-  background-image:url(/headerbg.png)
+  background-image:url(/headerbg.png);
+  background-color:white;
 }
 
 .project-name {
