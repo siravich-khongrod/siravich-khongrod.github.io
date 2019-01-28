@@ -78,6 +78,11 @@ This map was created using the datapoints that are within two kilometer radius o
 
 There are six clusters that are displayed in this visualization. The cluster formations are namely Bangkae, Tha Phra, Arun Amarin, Rama 7, Lad Phrao and Bang Khen. These are ordered from left to right according to this image. 
 
+<p>
+<img src="geospatial-analysis-of-market-activity-in-response-to-transit-development-of-bangkok/bangkok-condo-development-clusters.png"/>
+</p>
+
+
 #### For in-depth analysis, please contact Siravich for additional information.
 
 ## Conclusion and Future Work
