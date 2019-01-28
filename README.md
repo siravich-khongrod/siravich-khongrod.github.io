@@ -32,7 +32,7 @@ The purpose of this project is to demonstrate practical application of one of th
 ## <a style="color:#159957;" href="temporal-interactive-chicago-crime-map.html">Temporal Chicago Crime Interactive Map and Analysis under User-centric hierarchies (R and Shiny module)</a>
 
 This project is inspired by my personal experience when I was deciding on which Chicago neighborhood is ideal for renting an apartment. The things i consider are safety, distance to public transportation, distance to downtown and price.
-<a href='./temporal-interactive-chicago-crime-map.html>**Continue Reading**</a>
+<a href="temporal-interactive-chicago-crime-map.html">**Continue Reading**</a>
 <p><img src="temporal-interactive-chicago-crime-map/chicago-crime-map-lincoln-park.png"/></p>
 
 More Upcoming Project
