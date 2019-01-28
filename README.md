@@ -7,14 +7,19 @@ Visionary, I am, that I tell myself these are the essential skills that would su
 Storytelling, was the one that I pin the essence. This is what I put my best effort towards. I demonstrate this skill by ellaborating through the projects I have developed over the past years. The project ideas are mostly practical, meaning they are in real world application, not only academic or by theory. The art of conveying complex ideas would connect my world of computing to the ecosystem of business network leading to the future of technology.
 
 ## Projects Directory
+* <a href='./geospatial-analysis.html'>Geospatial Analysis of Market Activity in Response to Transit Development of Bangkok</a>
 * <a href="#listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb">Listing search tool on Leaflet NodeJS Web Application to Query Assets in Proximity of Train Station (GeoJSON and MongoDB)</a>
 * <a href="#temporal-chicago-crime-interactive-map-and-analysis-under-user-centric-hierarchies-r-and-shiny-module">Temporal Chicago Crime Interactive Map and Analysis under User-centric hierarchies (R and Shiny module)</a>
-* <a href='./geospatial-analysis.html'>Geospatial Analysis of Market Activity in Response to Transit Development of Bangkok</a> (in progress)
 * Automated Valuation Modeling using Linear Regression Techniques (SAS)
 * Decentralized Arduino Supervision and Control System for Home Automation
 * Three Dimension LED Matrix Multiplexing on Arduino Platform
 * Private Software as a Service using Optware on DD-WRT Custom Firmware Routers
 * Private Cloud Solution for Remote Multimedia Access
+
+## <a href='./geospatial-analysis.html'>Geospatial Analysis of Market Activity in Response to Transit Development of Bangkok</a>
+The objective is to analyse the market activity of real estate developer from data of condominium projects that are built near the train station in Bangkok. The first part aims to study the overall pattern by the operational status of the train system. Some patterns of market activity of real estate development are expected to co-exist corresponding to the development of new trains. The second part aims to investigate the area that has higher market activity and conduct an in-depth analysis of the project development in those areas as well as validating if it corresponds to the same expected pattern of having an inverse relationship between price and distance to the train station.
+
+<a href='./geospatial-analysis.html'>Read More</a>
 
 ## Listing search tool on leaflet NodeJS web application to query assets in proximity of train station (GeoJSON and MongoDB)
 
