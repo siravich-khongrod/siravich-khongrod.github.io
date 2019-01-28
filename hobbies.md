@@ -1,7 +1,6 @@
 
-<video width="320" height="240" controls>
-  <source src="hobbies/classical-guitar-near-dawn.mp4" type="video/mp4">
-</video>
+[![classical guitar Near Dawn](https://img.youtube.com/vi/7Bfoa6G7-8c.jpg)](https://youtu.be/7Bfoa6G7-8c "classical guitar near dawn")
+[![classical guitar Alhambra](https://img.youtube.com/vi/vNOcGWV7jYk.jpg)](https://youtu.be/vNOcGWV7jYk "classical guitar Alhambra")
 
 ![](hobbies/folkserver.JPG)
 
