@@ -1,6 +1,6 @@
 
-[![classical guitar Near Dawn](https://img.youtube.com/vi/7Bfoa6G7-8c.jpg)](https://youtu.be/7Bfoa6G7-8c "classical guitar near dawn")
-[![classical guitar Alhambra](https://img.youtube.com/vi/vNOcGWV7jYk.jpg)](https://youtu.be/vNOcGWV7jYk "classical guitar Alhambra")
+[![classical guitar Near Dawn](https://i.ytimg.com/vi/7Bfoa6G7-8c/hqdefault.jpg)](https://youtu.be/7Bfoa6G7-8c "classical guitar near dawn")
+[![classical guitar Alhambra](https://i.ytimg.com/vi/vNOcGWV7jYk/hqdefault.jpg)](https://youtu.be/vNOcGWV7jYk "classical guitar Alhambra")
 
 ![](hobbies/folkserver.JPG)
 
