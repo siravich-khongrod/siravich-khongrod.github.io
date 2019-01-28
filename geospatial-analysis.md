@@ -53,3 +53,34 @@ It should be noted that only 30% of the data has a start date of construction an
 <p>
 <img src="geospatial-analysis-of-market-activity-in-response-to-transit-development-of-bangkok/condo-construction-period.png"/>
 </p>
+
+## Overall Pricing Analysis of Condominiums near Train Stations
+
+This map covers Bangkok and the neighboring provinces, showing the condominium starting price and the train system by operational status. This gives a high overview of the trend regarding the operational status of the trains. 
+The grouping of condominiums with highest price indicated by the blue tags are at the central business district (CBD) with the earliest BTS Skytrain systems. These high-density areas are Silom and Sukhumvit where there is an interchange station. There are not much listed projects near the interchange station but more at the nearby stations. The highly priced condominiums are at Witthayu and East of Sukhumvit as shown in the zoomed map below. The condominiums with lower tier price indicated by the red and purple tags are at the same routes in Ratchathewi and further east of Sukhumvit.
+
+The West side across the river seems to be less populated compared to the East. This is possibly due to the fact that the East is closer to the job market at the Eastern industrial area and the industrial estate in Chonburi province. The developments in the West side have more sparsity. Perhaps people do not expect to rely much on the train but personal cars or other public transportation because traffic is less severe given the river separates these areas apart.
+
+In Bangkok. the condominiums with lowest price group are considerably far from the train stations and are at the upper region far from the CBD and at the far West side near the new train development. In Nonthaburi province, there is a considerable number of condominiums along the only route that went operational recently in 2018. There are not much condominium projects near the planned train development apart from the Northeast.
+
+<p>
+<img src="geospatial-analysis-of-market-activity-in-response-to-transit-development-of-bangkok/bangkok-condo-price-overall-analysis.png"/>
+</p>
+
+
+## Analysis of Condominium Projects near Trains Under Construction
+
+This map was created using the datapoints that are within two kilometer radius of the train stations that are under construction. The route under construction is highlighted in light blue. The range of condominium price is 699,000 to 4,200,000 million Thai baht. The overall pattern is trivial that the closer to the CBD, the more expensive the price of condominium. There seems to be more variance in price which form clusters in various part of Bangkok outer skirts.
+
+<p>
+<img src="geospatial-analysis-of-market-activity-in-response-to-transit-development-of-bangkok/bangkok-near-trainsit-condo-spatial-analysis.png"/>
+</p>
+
+There are six clusters that are displayed in this visualization. The cluster formations are namely Bangkae, Tha Phra, Arun Amarin, Rama 7, Lad Phrao and Bang Khen. These are ordered from left to right according to this image. 
+
+#### For in-depth analysis, please contact Siravich for additional information.
+
+## Conclusion and Future Work
+All in all, the general trend follows the pattern of having an inverse relation between the price and the distance to nearest train station in most areas. The other areas at the outer perimeters of Bangkok does not seem to share the same pattern. However, there might be more developments along the routes until the construction of the trains are complete despite the distribution of the condominium projects started date period. The pricing of these condominiums should be similar to the development in Nonthaburi province as mentioned in the introduction.
+
+As the number of condominiums increases, similar pricing patterns to inner Bangkok routes might become more common. There is little information that can be found regarding real estate development as the information is not maintained by the government authorities but are scattered among developers and other public websites. Banks and brokerage agents might have better internal information of condominiums but tend to lack in spatial analytics ability. Big data and Analytics might be the key to conducting a better information rich analysis if more data can be gathered throughout these agencies with the help of experts in real estate domain expert.
