@@ -35,6 +35,7 @@ This project is inspired by my personal experience when I was deciding on which 
 <a href="temporal-interactive-chicago-crime-map.html">**Continue Reading**</a>
 <p><img src="temporal-interactive-chicago-crime-map/chicago-crime-map-lincoln-park.png"/></p>
 
+
 # Reseach Papers
 ## An evaluation of writeprint matching method to identify the authors of Thai online messages
 Marukatat, Rangsipan & Khongrod, Siravich. (2015). An evaluation of writeprint matching method to identify the authors of Thai online messages. 1-5. 10.1109/SNPD.2015.7176200. 
@@ -51,6 +52,8 @@ https://ieeexplore.ieee.org/document/7176200
 Many home automation systems today rely on a single supervision or central control system which links to all the sensors and control units. Apart from having users have to invest a large amount of money for such system, the system has to be initially implemented or re-implemented with subject to changes by specialists. Moreover, there are certain limitations to hardware capabilities such as computational power, number of interface, physical hardware reachability.
 
 This project proposes a different approach for such system having many units of low computational power control system as nodes distributed across a networked system.
+
+[![classical guitar Alhambra](https://i.ytimg.com/vi/kk5RwZoNmUo/hqdefault.jpg)](https://youtu.be/kk5RwZoNmUo "classical guitar Alhambra")
 
 #### More Upcoming Projects
 * Automated Valuation Modeling using Linear Regression Techniques (SAS)
