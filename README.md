@@ -66,8 +66,7 @@ This project proposes a different approach for such system having many units of 
 * Websites: [Asian Legal and Tax Strategies](http://www.asianlegal.co.th)
 * Personal Music Server  
 [![remote music server](https://i.ytimg.com/vi/kk5RwZoNmUo/hqdefault.jpg)](https://youtu.be/kk5RwZoNmUo "remote music server")
-
-## [Hobbies](static/hobbies.html)
+* [Hobbies](static/hobbies.html)
 
 [editor on GitHub](https://github.com/siravich-khongrod/siravich-khongrod.github.io/edit/master/README.md) 
 
