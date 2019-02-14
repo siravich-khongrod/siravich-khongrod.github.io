@@ -63,14 +63,19 @@ This project proposes a different approach for such system having many units of 
 * Private Cloud Solution for Remote Multimedia Access
 
 # Other Projects
-* Websites: [Asian Legal and Tax Strategies](http://www.asianlegal.co.th)
+* <a style="color:#159957;" href="static/custom-development.html">Custom Developments</a>
+* Website Development: [Asian Legal and Tax Strategies](http://www.asianlegal.co.th)
 * Personal Music Server  
 [![remote music server](https://i.ytimg.com/vi/kk5RwZoNmUo/hqdefault.jpg)](https://youtu.be/kk5RwZoNmUo "remote music server")
 * [Hobbies](static/hobbies.html)
+  
+  
+  
 
+
+
+# [Find me on LinkedIn](https://www.linkedin.com/in/siravich-folk-khongrod/)
+[![Find me on LinkedIn](linkedin.png)](https://www.linkedin.com/in/siravich-folk-khongrod "find me on linkedin")
+  
+  
 [editor on GitHub](https://github.com/siravich-khongrod/siravich-khongrod.github.io/edit/master/README.md) 
-
-[Find me on LinkedIn](https://www.linkedin.com/in/siravich-folk-khongrod/)
-<p align="center">
-<img src="linkedin.png"/>
-</p>
