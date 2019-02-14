@@ -29,7 +29,7 @@ The purpose of this project is to demonstrate practical application of one of th
 
 <img src="listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb/nodejs-leaflet-mongo-arch.png"/>
 
-## <a style="color:#159957;" href="temporal-interactive-chicago-crime-map.html">Temporal Chicago Crime Interactive Map and Analysis under User-centric hierarchies (R and Shiny module)</a>
+## <a style="color:#159957;" href="static/temporal-interactive-chicago-crime-map.html">Temporal Chicago Crime Interactive Map and Analysis under User-centric hierarchies (R and Shiny module)</a>
 
 This project is inspired by my personal experience when I was deciding on which Chicago neighborhood is ideal for renting an apartment. The things i consider are safety, distance to public transportation, distance to downtown and price.
 <a href="temporal-interactive-chicago-crime-map.html">**Continue Reading**</a>
@@ -62,6 +62,9 @@ This project proposes a different approach for such system having many units of 
 * Three Dimension LED Matrix Multiplexing on Arduino Platform
 * Private Software as a Service using Optware on DD-WRT Custom Firmware Routers
 * Private Cloud Solution for Remote Multimedia Access
+
+# Other Projects
+* Websites: http://www.asianlegal.co.th
 
 ### [Hobbies](hobbies.html)
 
