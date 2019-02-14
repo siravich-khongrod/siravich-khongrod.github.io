@@ -72,7 +72,7 @@ This project proposes a different approach for such system having many units of 
 * Website Development: [Asian Legal and Tax Strategies](http://www.asianlegal.co.th)
 * Personal Music Server  
 [![remote music server](https://i.ytimg.com/vi/kk5RwZoNmUo/hqdefault.jpg)](https://youtu.be/kk5RwZoNmUo "remote music server")
-* [Hobbies](static/hobbies.html)
+* <a style="color:#159957;" href="static/hobbies.html">Hobbies</a>
   
   
   
