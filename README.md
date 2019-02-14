@@ -64,10 +64,10 @@ This project proposes a different approach for such system having many units of 
 
 # Other Projects
 * Websites: http://www.asianlegal.co.th
-* Personal Music Server
+* Personal Music Server  
 [![remote music server](https://i.ytimg.com/vi/kk5RwZoNmUo/hqdefault.jpg)](https://youtu.be/kk5RwZoNmUo "remote music server")
 
-## [Hobbies](hobbies.html)
+## [Hobbies](static/hobbies.html)
 
 [editor on GitHub](https://github.com/siravich-khongrod/siravich-khongrod.github.io/edit/master/README.md) 
 
