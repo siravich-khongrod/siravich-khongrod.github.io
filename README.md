@@ -16,6 +16,11 @@ Storytelling, was the one that I pin essence. This is where I put my best effort
 * Private Software as a Service using Optware on DD-WRT Custom Firmware Routers
 * Private Cloud Solution for Remote Multimedia Access
 
+## Blog
+* <a href='blog/acs-api.html'>Getting Large Datasets from American Community Survey Census Data</a>
+* <a href='blog/bigram-dice.html'>Using BiGrams and Dice Coefficient to Aid Joining Survey Data</a>
+
+
 ## <a style="color:#159957;" href='static/geospatial-analysis.html'>Geospatial Analysis of Market Activity in Response to Transit Development of Bangkok</a>
 
 <img align="left" style="padding-right: 20px;" src="static/geospatial-analysis-of-market-activity-in-response-to-transit-development-of-bangkok/bangkok-condo-development-clusters.png"/>
