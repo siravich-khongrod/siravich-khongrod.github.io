@@ -7,7 +7,7 @@ Being visionary, I tell myself these are the essential skills that would suffice
 Storytelling, was the one that I pin essence. This is where I put my best effort. I demonstrate this skill by ellaborating through the projects I have developed over the past years. The project ideas are mostly practical, meaning they are in real world application, not only academic or theoretical. The art of conveying complex ideas would connect my world of computing to the ecosystem of business network leading to the future of technology.
 
 ## Projects Directory
-* <a href='./geospatial-analysis.html'>Geospatial Analysis of Market Activity in Response to Transit Development of Bangkok</a>
+* <a href='#geospatial-analysis-of-market-activity-in-response-to-transit-development-of-bangkok'>Geospatial Analysis of Market Activity in Response to Transit Development of Bangkok</a>
 * <a href="#listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb">Listing search tool on Leaflet NodeJS Web Application to Query Assets in Proximity of Train Station (GeoJSON and MongoDB)</a>
 * <a href="#temporal-chicago-crime-interactive-map-and-analysis-under-user-centric-hierarchies-r-and-shiny-module">Temporal Chicago Crime Interactive Map and Analysis under User-centric hierarchies (R and Shiny module)</a>
 * Automated Valuation Modeling using Linear Regression Techniques (SAS)
