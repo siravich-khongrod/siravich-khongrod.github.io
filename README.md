@@ -45,7 +45,7 @@ Abstract:
 This research studies the author identification of Thai online messages, based on 54 writing attributes. The method in focus is writeprint matching, which employs frequent pattern mining to create the writeprint of each suspect and computes a similarity score between this writeprint and the pattern found in an anonymous message. It achieved an average accuracy of 82%, while other well-known methods, support vector machine (SVM) and C4.5 decision tree, achieved average accuracies of 89% and 81%, respectively. As for the identification of individual author, all three methods were as good as each other in most cases. The writeprint matching method had potential in reducing Type I error or the chance of dismissing real offenders. However, its performance was still limited when the suspects had too similar writing styles.
 
 Published in: 2015 IEEE/ACIS 16th International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing (SNPD) Japan
-https://ieeexplore.ieee.org/document/7176200
+[https://ieeexplore.ieee.org/document/7176200](https://ieeexplore.ieee.org/document/7176200)
 
 
 ## Decentralized Supervision and Control System for Home Automation
@@ -63,7 +63,7 @@ This project proposes a different approach for such system having many units of 
 * Private Cloud Solution for Remote Multimedia Access
 
 # Other Projects
-* Websites: http://www.asianlegal.co.th
+* Websites: [http://www.asianlegal.co.th] (http://www.asianlegal.co.th)
 * Personal Music Server  
 [![remote music server](https://i.ytimg.com/vi/kk5RwZoNmUo/hqdefault.jpg)](https://youtu.be/kk5RwZoNmUo "remote music server")
 
