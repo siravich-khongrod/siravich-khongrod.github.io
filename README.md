@@ -54,7 +54,6 @@ Many home automation systems today rely on a single supervision or central contr
 
 This project proposes a different approach for such system having many units of low computational power control system as nodes distributed across a networked system.
 
-[![remote music server](https://i.ytimg.com/vi/kk5RwZoNmUo/hqdefault.jpg)](https://youtu.be/kk5RwZoNmUo "remote music server")
 
 #### More Upcoming Projects
 * Automated Valuation Modeling using Linear Regression Techniques (SAS)
@@ -65,8 +64,10 @@ This project proposes a different approach for such system having many units of 
 
 # Other Projects
 * Websites: http://www.asianlegal.co.th
+* Personal Music Server
+[![remote music server](https://i.ytimg.com/vi/kk5RwZoNmUo/hqdefault.jpg)](https://youtu.be/kk5RwZoNmUo "remote music server")
 
-### [Hobbies](hobbies.html)
+## [Hobbies](hobbies.html)
 
 [editor on GitHub](https://github.com/siravich-khongrod/siravich-khongrod.github.io/edit/master/README.md) 
 
