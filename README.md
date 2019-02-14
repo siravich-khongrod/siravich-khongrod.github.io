@@ -16,24 +16,24 @@ Storytelling, was the one that I pin essence. This is where I put my best effort
 * Private Software as a Service using Optware on DD-WRT Custom Firmware Routers
 * Private Cloud Solution for Remote Multimedia Access
 
-## <a style="color:#159957;" href='./geospatial-analysis.html'>Geospatial Analysis of Market Activity in Response to Transit Development of Bangkok</a>
+## <a style="color:#159957;" href='static/geospatial-analysis.html'>Geospatial Analysis of Market Activity in Response to Transit Development of Bangkok</a>
 
-<img align="left" style="padding-right: 20px;" src="geospatial-analysis-of-market-activity-in-response-to-transit-development-of-bangkok/bangkok-condo-development-clusters.png"/>
+<img align="left" style="padding-right: 20px;" src="static/geospatial-analysis-of-market-activity-in-response-to-transit-development-of-bangkok/bangkok-condo-development-clusters.png"/>
 
-The objective is to analyse the market activity of real estate developer from data of condominium projects that are built near the train station in Bangkok. The first part aims to study the overall pattern by the operational status of the train system. Some patterns of market activity of real estate development are expected to co-exist corresponding to the development of new trains. The second part aims to investigate the area that has higher market activity and conduct an in-depth analysis of the project development in those areas as well as validating if it corresponds to the same expected pattern of having an inverse relationship between price and distance to the train station. <a href='./geospatial-analysis.html'>**Continue Reading**</a>
+The objective is to analyse the market activity of real estate developer from data of condominium projects that are built near the train station in Bangkok. The first part aims to study the overall pattern by the operational status of the train system. Some patterns of market activity of real estate development are expected to co-exist corresponding to the development of new trains. The second part aims to investigate the area that has higher market activity and conduct an in-depth analysis of the project development in those areas as well as validating if it corresponds to the same expected pattern of having an inverse relationship between price and distance to the train station. <a href='static/geospatial-analysis.html'>**Continue Reading**</a>
 
-## <a style="color:#159957;" href='./listing-search-tool-map.html'>Listing search tool on leaflet NodeJS web application to query assets in proximity of train station (GeoJSON and MongoDB)</a>
-<img align="right" style="width:300px;" src="listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb/user-interface.png"/>
+## <a style="color:#159957;" href='static/listing-search-tool-map.html'>Listing search tool on leaflet NodeJS web application to query assets in proximity of train station (GeoJSON and MongoDB)</a>
+<img align="right" style="width:300px;" src="static/listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb/user-interface.png"/>
 
 The purpose of this project is to demonstrate practical application of one of the databases of big data and its feature. The concept is to develop a tool that allow users to search apartments and condominiums within a specific distance from the train station. As we all know, in a highly dense area or the central business district, the location, and to be more specific, the distance to the public transportation is a major factor in purchasing  or renting a condominium. <a href="listing-search-tool-map.html">**Continue Reading**</a>
 
-<img src="listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb/nodejs-leaflet-mongo-arch.png"/>
+<img src="static/listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb/nodejs-leaflet-mongo-arch.png"/>
 
 ## <a style="color:#159957;" href="static/temporal-interactive-chicago-crime-map.html">Temporal Chicago Crime Interactive Map and Analysis under User-centric hierarchies (R and Shiny module)</a>
 
 This project is inspired by my personal experience when I was deciding on which Chicago neighborhood is ideal for renting an apartment. The things i consider are safety, distance to public transportation, distance to downtown and price.
-<a href="temporal-interactive-chicago-crime-map.html">**Continue Reading**</a>
-<p><img src="temporal-interactive-chicago-crime-map/chicago-crime-map-lincoln-park.png"/></p>
+<a href="static/temporal-interactive-chicago-crime-map.html">**Continue Reading**</a>
+<p><img src="static/temporal-interactive-chicago-crime-map/chicago-crime-map-lincoln-park.png"/></p>
 
 ______________________________________
 
