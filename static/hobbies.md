@@ -3,19 +3,19 @@
 [![classical guitar Alhambra](https://i.ytimg.com/vi/vNOcGWV7jYk/hqdefault.jpg)](https://youtu.be/vNOcGWV7jYk "classical guitar Alhambra")
 
 ## Perosnal Server
-![](static/hobbies/folkserver.jpg)
+![](hobbies/folkserver.jpg)
 
 ## 3D Metal Puzzle
-![](static/hobbies/metal-jigsaw1.JPG)
-![](static/hobbies/metal-jigsaw2.JPG)
-![](static/hobbies/metal-jigsaw3.JPG)
-![](static/hobbies/metal-jigsaw4.JPG)
-![](static/hobbies/bab-castle1.jpg)
-![](static/hobbies/bab-castle2.JPG)
-![](static/hobbies/bab-castle3.JPG)
-![](static/hobbies/bicyble.jpg)
-![](static/hobbies/assembly.jpg)
-![](static/hobbies/dis-castle2.JPG)
-![](static/hobbies/dis-castle3.jpg)
-![](static/hobbies/dis-castle4.jpg)
+![](hobbies/metal-jigsaw1.JPG)
+![](hobbies/metal-jigsaw2.JPG)
+![](hobbies/metal-jigsaw3.JPG)
+![](hobbies/metal-jigsaw4.JPG)
+![](hobbies/bab-castle1.jpg)
+![](hobbies/bab-castle2.JPG)
+![](hobbies/bab-castle3.JPG)
+![](hobbies/bicyble.jpg)
+![](hobbies/assembly.jpg)
+![](hobbies/dis-castle2.JPG)
+![](hobbies/dis-castle3.jpg)
+![](hobbies/dis-castle4.jpg)
 
