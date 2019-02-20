@@ -1,10 +1,10 @@
 <div class="container-fluid">
     <div class="row-fluid">
       <div class="span6">
-        <img src="hobbies/metal-jigsaw1.JPG">
+        <img src="hobbies/metal-jigsaw1.JPG" width=50%>
       </div>
       <div class="span6">
-        <img src="hobbies/metal-jigsaw2.JPG">
+        <img src="hobbies/metal-jigsaw2.JPG" width=50%>
       </div>
     </div>
 </div>
