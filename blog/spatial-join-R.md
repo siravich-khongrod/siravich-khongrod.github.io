@@ -5,6 +5,10 @@ Today I demonstrate how to perform a spatial join with R. Spatial joining, at le
 The example below is to spatial join Chicago crime data with the census tract. This allow the team to perform analysis using other geographical indicators such as market conditions.
 You might notice that I converted spatial points to simple features. Simple features is a standardized way to encode spatial vector data and simple feature makes joining easy.
 Alternatively, it is possible to using the base class function 'over', but this method outputs only the right table of join, meaning that this output will need to be appended to the original table which makes the process tedious when it comes to spatial points fallig off the outer boundary of the shapefile.
+
+More information regarding SF package can be found here: 
+[Comprehensive R Archive Network](https://cran.r-project.org/web/packages/sf/vignettes/sf1.html)
+
 ``` R
 getTractShp <- function(filedir){
   tractshp <- readOGR(dsn = filedir)
