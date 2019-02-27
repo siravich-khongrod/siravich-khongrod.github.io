@@ -16,9 +16,10 @@ Storytelling, was the one that I pin essence. This is where I put my best effort
 * Private Software as a Service using Optware on DD-WRT Custom Firmware Routers
 * Private Cloud Solution for Remote Multimedia Access
 
-## Blog
+## My R Blogger
 * <a href='blog/acs-api.html'>Getting Large Datasets from American Community Survey Census Data</a>
 * <a href='blog/bigram-dice.html'>Using BiGrams and Dice Coefficient to Aid Joining Survey Data</a>
+* <a href='blog/spatial-join.html'>Spatial Joining with R</a>
 
 
 ## <a style="color:#159957;" href='static/geospatial-analysis.html'>Geospatial Analysis of Market Activity in Response to Transit Development of Bangkok</a>
