@@ -1,5 +1,8 @@
 # Spatial Joining with R
 
+<img style="width:100%;" src='chi_crime.png'/>
+
+
 Today I demonstrate how to perform a spatial join with R. Spatial joining, at least in this case, is to assign a geographical indicator using coordinates.
 
 The example below is to spatial join Chicago crime data with the census tract. This allow the team to perform analysis using other geographical indicators such as market conditions.
