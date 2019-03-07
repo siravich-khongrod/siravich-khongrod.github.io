@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<script type = "text/javascript" src = "https://d3js.org/d3.v4.min.js"></script>
+	</head>
+	<body>
+		<script>
+			const categories = d3.range(0, 10).map(d => (
+			{category: `category ${d}`, amount: (Math.random() * Math.floor(1000))}
+			));
+
+			//use pack layout to regress dataset d to the mean
+			function refine(d, p) {
+				const leaves = function (dataset) {
+				  let pack = d3.pack()
+				  .size([p.width, p.height])
+				  .padding(p.padding);
+
+				  let nodes = d3.hierarchy({children: dataset})
+				    .sum(d => d.value);
+				  
+				  return pack(nodes).leaves()
+				}
+
+				//retain a copy of the value field for future reference
+				let dataset = d.map(d => (
+				  Object.assign(d, {value: d.amount})
+				));
+
+				//run the pack function until the radius meets a minimum threshold
+				while (d3.min(leaves(dataset), d => d.r) <= p.minRadius) {
+				  
+				  //find the mean
+				  let mean = d3.mean(leaves(dataset), d=> d.value);
+				  
+				  //adjust all of the values by an arbitrary amount to the mean
+				  dataset = dataset.map(function(d) { 
+				    let n = d.value + 0.05 * (mean - d.value);
+				    return Object.assign(d, {value: n}); 
+				  });
+				  
+				};
+			       
+			    //returned dataset includes original values (amount) and new values (value)
+			    return leaves(dataset);
+			 }
+
+			var width = 600;
+			var height = 600;
+			params = ({width: width, height: height, padding: 10, minRadius: 50})
+			pdata=refine(categories, params);
+
+			var svg = d3
+				.select("body")
+				.append("svg")
+				.attr("width", width)
+				.attr("height", height);
+         
+		var node = svg.selectAll(".node")
+	    .data(pdata)
+	    .enter().append("g")
+	      .attr("class", "node")
+	      .attr("transform", function(d) {
+	          return "translate(" + d.x + "," + d.y + ")";
+	       });
+	    node.append("circle")
+		    .attr("r", d => d.r)
+		    .style("fill", "#4D6A80");
+
+      </script>
+   </body>
+</html>
