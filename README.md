@@ -27,11 +27,16 @@ Storytelling, was the one that I pin essence. This is where I put my best effort
 <!-- start of projects -->
 ## <a style="color:#159957;" href='https://resume-retrieval.herokuapp.com'>Online Resume Searcher on Cloud Platform</a>
 
-<img src="static/resume-search/resume-search-page.jpg">
-<img src="static/resume-search/resume-search-results.jpg">
+<img src="static/resume-retrieval/resume-search-page.jpg">
+<img src="static/resume-retrieval/resume-search-results.jpg">
 
-The motivation was to apply text search to resumes on a live online platform in order to determine a candidate for certain jon qualifications.  Feel free to visit the link here: <a href='https://resume-retrieval.herokuapp.com'>**Live Application**</a>
+The motivation was to apply text search to resumes on a live cloud platform in order to determine a candidate according to certain job qualifications. I'm using Heroku as the cloud platform and Flask as a Python Web Application Framework. Feel free to visit the link here: <a href='https://resume-retrieval.herokuapp.com'>**Live Application**</a>
 
+The project is done between a group of three students at DePaul. We have very clear roles as follows:
+* Folk (myself) - Application Architect and Platform.
+* Ivy - Literature analysis and review. Automated testing and evaluation.
+* Ray - Data modelling and retrieval algorithms
+<a href='static/resume-retrieval.html'>**Continue Reading**</a>
 
 
 ## <a style="color:#159957;" href='static/geospatial-analysis.html'>Geospatial Analysis of Market Activity in Response to Transit Development of Bangkok</a>
