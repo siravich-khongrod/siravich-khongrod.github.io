@@ -25,7 +25,7 @@ Storytelling, was the one that I pin essenceand put my best effort. I demonstrat
 
 
 <!-- start of projects -->
-## <a style="color:#159957;" href='https://resume-retrieval.herokuapp.com'>Resume Searcher on Cloud Platform</a>
+## <a style="color:#159957;" href='static/resume-retrieval.html'>Resume Searcher on Cloud Platform</a>
 
 <img src="static/resume-retrieval/resume-search-page.jpg">
 <img src="static/resume-retrieval/resume-search-results.jpg">
