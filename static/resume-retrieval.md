@@ -1,10 +1,10 @@
 ## Resume Retrieval and Ranking Applicaton on Colud Platform
 
 <p>
-<img src="static/resume-retrieval/resume-search-page.jpg">
+<img src="resume-retrieval/resume-search-page.jpg">
 </p>
 <p>
-<img src="static/resume-retrieval/resume-search-results.jpg">
+<img src="resume-retrieval/resume-search-results.jpg">
 </p>
 
 The motivation was to apply text search to resumes on a live cloud platform in order to determine a candidate according to certain job qualifications. I'm using Heroku as the cloud platform and Flask as a Python Web Application Framework. Feel free to visit the link here:
@@ -29,7 +29,7 @@ While there is an overwhelming number of modules, we wanted to have a very lean 
 Starting from the top left, the first module is the survey for our classmates as well as graduate students in the Data Science and Predictive Analytics program. The goal here is to get a set of resumes and job description that would be an ideal match according to their dream jobs. I coded this page using HTML, Javascript and PHP. The interface is responsive for using Bootstrap Responsive Design. The other metadata was stored in MySQL database. The files are stored in a protected filesystem.
 
 <p>
-<img src="resume-retrieval/resume-retrieval/survey.jpg"/>
+<img src="resume-retrieval/survey.jpg"/>
 </p>
 
 Feel free to submit your resume here:
