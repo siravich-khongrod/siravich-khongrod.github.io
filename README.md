@@ -25,12 +25,13 @@ Storytelling, was the one that I pin essence. This is where I put my best effort
 
 
 <!-- start of projects -->
-## <a style="color:#159957;" href='http://csc575proj2.herokuapp.com'>Online Resume Searcher on Cloud Platform</a>
+## <a style="color:#159957;" href='https://resume-retrieval.herokuapp.com'>Online Resume Searcher on Cloud Platform</a>
 
 <img src="static/resume-search/resume-search-page.jpg">
 <img src="static/resume-search/resume-search-results.jpg">
 
-The motivation was to apply text search to resumes on a live online platform in order to determine a candidate for certain jon qualifications.  Feel free to visit the link here: <a href='http://csc575proj2.herokuapp.com'>**Live Application**</a>
+The motivation was to apply text search to resumes on a live online platform in order to determine a candidate for certain jon qualifications.  Feel free to visit the link here: <a href='https://resume-retrieval.herokuapp.com'>**Live Application**</a>
+
 
 
 ## <a style="color:#159957;" href='static/geospatial-analysis.html'>Geospatial Analysis of Market Activity in Response to Transit Development of Bangkok</a>
