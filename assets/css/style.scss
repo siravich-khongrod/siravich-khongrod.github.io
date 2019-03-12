@@ -36,3 +36,12 @@ h1.main-content, h2.main-content {
   margin-right: auto;
   float: left;
 }
+
+
+@media only screen and (max-device-width : 480px) {
+  .img-one-row { 
+    white-space: normal;
+    .img {
+      width: 100%
+    }
+}
