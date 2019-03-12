@@ -7,7 +7,7 @@ Being visionary, I tell myself these are the essential skills that would suffice
 Storytelling, was the one that I pin essenceand put my best effort. I demonstrate this skill by ellaborating through the projects I have developed over the past years. The project ideas are mostly practical, meaning they are in real world application, not only academic or theoretical. The art of conveying complex ideas would connect my world of computing to the ecosystem of business network leading to the future of technology.
 
 ## Projects Directory
-* <a href='#online-resume-searcher-on-cloud-platform'> <span style="color:red;"> NEWEST PROJECT </span> Resume Searcher on Flask </a>
+* <a href='#resume-searcher-on-cloud-platform'> <span style="color:red;"> NEWEST PROJECT </span>Resume Searcher on Cloud Platform</a>
 * <a href='#geospatial-analysis-of-market-activity-in-response-to-transit-development-of-bangkok'>Geospatial Analysis of Market Activity in Response to Transit Development of Bangkok</a>
 * <a href="#listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb">Listing search tool on Leaflet NodeJS Web Application to Query Assets in Proximity of Train Station (GeoJSON and MongoDB)</a>
 * <a href="#temporal-chicago-crime-interactive-map-and-analysis-under-user-centric-hierarchies-r-and-shiny-module">Temporal Chicago Crime Interactive Map and Analysis under User-centric hierarchies (R and Shiny module)</a>
@@ -25,7 +25,7 @@ Storytelling, was the one that I pin essenceand put my best effort. I demonstrat
 
 
 <!-- start of projects -->
-## <a style="color:#159957;" href='https://resume-retrieval.herokuapp.com'>Online Resume Searcher on Cloud Platform</a>
+## <a style="color:#159957;" href='https://resume-retrieval.herokuapp.com'>Resume Searcher on Cloud Platform</a>
 
 <img src="static/resume-retrieval/resume-search-page.jpg">
 <img src="static/resume-retrieval/resume-search-results.jpg">
