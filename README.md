@@ -4,7 +4,7 @@ From the field of space-time-relativity, some believe that the higher dimensions
 
 Being visionary, I tell myself these are the essential skills that would suffice my career path. Over the past years I have shaped myself to be fully equipted with analytic skills that allow me to further strive to the management role directly involved with the Data Analytics.
 
-Storytelling, was the one that I pin essence. This is where I put my best effort. I demonstrate this skill by ellaborating through the projects I have developed over the past years. The project ideas are mostly practical, meaning they are in real world application, not only academic or theoretical. The art of conveying complex ideas would connect my world of computing to the ecosystem of business network leading to the future of technology.
+Storytelling, was the one that I pin essenceand put my best effort. I demonstrate this skill by ellaborating through the projects I have developed over the past years. The project ideas are mostly practical, meaning they are in real world application, not only academic or theoretical. The art of conveying complex ideas would connect my world of computing to the ecosystem of business network leading to the future of technology.
 
 ## Projects Directory
 * <a href='#online-resume-searcher-on-cloud-platform'> <span style="color:red;"> NEWEST PROJECT </span> Resume Searcher on Flask </a>
