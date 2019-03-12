@@ -60,7 +60,7 @@ The methodology is available here: https://nlp.stanford.edu/IR-book/html/htmledi
 
 ## Future Work
 * Implementation with realtime data and authentication
-* Implementation of relevance feed to improve search experience by building this system under an Application Tracking System (ATS)
+* Implementation of relevance feedback to improve search experience by building this system under an Application Tracking System (ATS)
 * Trying different models
 * Matching open positions for a single candidate
 
