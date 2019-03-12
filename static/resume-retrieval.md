@@ -17,6 +17,11 @@ The project is done between a group of three students at DePaul. We have very cl
 * Ivy - Literature analysis and review. Automated testing and evaluation.
 * Ray - Data modelling and retrieval algorithms
 
+I also would like to mention that working as a team, in terms of collaborating on programming, was not easy. We shared codes using github in order to migrate the changes to the web application without crashing the system.
+
+<img src="resume-retrieval/github.jpg"/>
+
+
 ## Design
 
 While there is an overwhelming number of modules, we wanted to have a very lean architecture. The figure below shows a big picture of these modules which allow us to not loose our track. The upper region of the flow is offline development and the bottom region is regarding the cloud.
