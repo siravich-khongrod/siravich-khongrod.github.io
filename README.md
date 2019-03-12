@@ -35,7 +35,7 @@ The motivation was to apply text search to resumes on a live cloud platform in o
 The project is done between a group of three students at DePaul. We have very clear roles as follows:
 * Folk (myself) - Application Architect and Platform.
 * Ivy - Literature analysis and review. Automated testing and evaluation.
-* Ray - Data modelling and retrieval algorithms
+* Ray - Data modelling and retrieval algorithms  
 <a href='static/resume-retrieval.html'>**Continue Reading**</a>
 
 
