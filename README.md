@@ -27,8 +27,8 @@ Storytelling, was the one that I pin essenceand put my best effort. I demonstrat
 <!-- start of projects -->
 ## <a style="color:#159957;" href='static/resume-retrieval.html'>Resume Searcher on Cloud Platform</a>
 
-<img src="static/resume-retrieval/resume-search-page.jpg">
-<img src="static/resume-retrieval/resume-search-results.jpg">
+<img style="max-height: 300px;" src="static/resume-retrieval/resume-search-page.jpg">
+<img style="max-height: 300px;" src="static/resume-retrieval/resume-search-results.jpg">
 
 The motivation was to apply text search to resumes on a live cloud platform in order to determine a candidate according to certain job qualifications. I'm using Heroku as the cloud platform and Flask as a Python Web Application Framework. Feel free to visit the link here: <a href='https://resume-retrieval.herokuapp.com'>**Live Application**</a>
 
