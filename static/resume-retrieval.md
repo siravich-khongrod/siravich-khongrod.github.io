@@ -1,4 +1,4 @@
-## Resume Retrieval and Ranking Applicaton on Colud Platform
+## Resume Retrieval and Ranking Application on Cloud Platform
 
 <p>
 <img src="resume-retrieval/resume-search-page.jpg">
@@ -11,11 +11,12 @@ The motivation was to apply text search to resumes on a live cloud platform in o
 <a href='https://resume-retrieval.herokuapp.com'>**Live Application**</a>
 Note that our dataset has mostly resumes of electrical engineers. Example keywords would be <a href='https://resume-retrieval.herokuapp.com/?q=electrical+engineering'>electrical engineering</a>, <a href='https://resume-retrieval.herokuapp.com/?q=assemble+programming'>assembly programming</a>
 
+The successful end product is a Minimal Viable Product that demonstrates this idea using public data. 
 
 The project is done between a group of three students at DePaul. We have very clear roles as follows:
 * Folk (myself) - Application architecture and deployment on various platforms.
-* Ivy - Literature analysis and review. Automated testing and evaluation.
-* Ray - Data modelling and retrieval algorithms
+* <a href="https://www.linkedin.com/in/ivyli678/">Ivy</a> - Literature analysis and review. Automated testing and evaluation.
+* <a href="https://www.linkedin.com/in/ray-hu/">Ray</a> - Data modelling and retrieval algorithms
 
 I also would like to mention that working as a team, in terms of collaborating on programming, was not easy. We shared codes using github in order to migrate the changes to the web application without crashing the system.
 
