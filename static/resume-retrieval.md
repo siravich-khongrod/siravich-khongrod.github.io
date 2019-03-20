@@ -25,6 +25,7 @@ The project is done between a group of three students at DePaul. We have very cl
 
 I think I had a great team and a memorable experience working with Ivy and Ray. Part of the challenge to this project is not only the development of a live server-side web application but also collaborating our work over cycles of deployment to the web server. A considerable portion of work was done in defining the right framework and protocol for incremental development on the same platforms. I think choosing the right tools helped us out to organize everything and consolidate the changes and contribution that each member had made. Thus, I would like to accentuate that collaboration was a valuable item I learned from this project and I would like to say thank you for to Professor <a href="https://www.cdm.depaul.edu/about/pages/people/facultyinfo.aspx?fid=776">Tomuro</a> giving us the opportunity to develop this skill and create a project that is practical in real world application.
 
+### Collaboration
 Github was used, in addition to Git, for collaborating between the team members who are responsible for different modules such as the search algorithms, the user interface and the web application in order to track and review the changes before it will be branched into the main code repository. This avoids the changes, such as renaming the function that was previously assigned to the frontend, that might crash the whole web application.
 <img src="resume-retrieval/github.jpg"/>
 
