@@ -15,6 +15,7 @@ The idea on the technical end was to apply text search to resumes on a live clou
 <a href='https://resume-retrieval.herokuapp.com'>**Live Application**</a>
 Note that our dataset has mostly resumes of electrical engineers that are publicly availble from an online source. Example keywords would be <a href='https://resume-retrieval.herokuapp.com/?q=electrical+engineering'>electrical engineering</a>, <a href='https://resume-retrieval.herokuapp.com/?q=assemble+programming'>assembly programming</a>
 
+### The Team
 The project is done between a group of three students at DePaul. We have very clear roles as follows:
 * Folk (myself) - Application architecture and deployment on various platforms.
 * <a href="https://www.linkedin.com/in/ivyli678/">Ivy</a> - Literature analysis and review. Automated testing and evaluation.
