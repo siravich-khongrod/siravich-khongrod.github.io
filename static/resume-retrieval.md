@@ -1,11 +1,13 @@
 ## Resume Retrieval and Ranking Application on Cloud Platform
 
-<p>
+<!--p>
 <img src="resume-retrieval/resume-search-page.jpg">
 </p>
 <p>
 <img src="resume-retrieval/resume-search-results.jpg">
-</p>
+</p-->
+
+<iframe width="100%" height="600" src="https://resume-retrieval.herokuapp.com/" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
 
 Artificial intelligence and automation in the hiring industry have been around for a while, and machine-learning aided resume filtering and job matching have matured over the recent years. Leading-edge machine learning tools in HR have set the trends for 2019 and the upcoming years, such as blind resume screening, in which hiring-relevant information has been preserved while information prone to gender and ethnicity - like bias is hidden. 
 
