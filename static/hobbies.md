@@ -3,7 +3,7 @@
 
 ## Bitcoin Mining
 ![](hobbies/bitcoin1.jpg)
-![](hobbies/bitcoin2.jpg)
+![](hobbies/bitcoin2.jpeg)
 
 ## Classical Guitar
 [![classical guitar Near Dawn](https://i.ytimg.com/vi/7Bfoa6G7-8c/hqdefault.jpg)](https://youtu.be/7Bfoa6G7-8c "classical guitar near dawn")
