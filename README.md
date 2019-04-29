@@ -4,10 +4,10 @@ From the field of space-time-relativity, some believe that the higher dimensions
 
 Being visionary, I tell myself these are the essential skills that would suffice my career path. Over the past years I have shaped myself to be fully equipted with analytic skills that allow me to further strive to the management role directly involved with the Data Analytics.
 
-Storytelling, was the one that I pin essence. This is where I put my best effort. I demonstrate this skill by ellaborating through the projects I have developed over the past years. The project ideas are mostly practical, meaning they are in real world application, not only academic or theoretical. The art of conveying complex ideas would connect my world of computing to the ecosystem of business network leading to the future of technology.
+Storytelling, was the one that I pin essenceand put my best effort. I demonstrate this skill by ellaborating through the projects I have developed over the past years. The project ideas are mostly practical, meaning they are in real world application, not only academic or theoretical. The art of conveying complex ideas would connect my world of computing to the ecosystem of business network leading to the future of technology.
 
 ## Projects Directory
-* <a href='#online-resume-searcher-on-cloud-platform'> <span style="color:red;"> NEWEST PROJECT </span> Resume Searcher on Flask </a>
+* <a href='#resume-searcher-on-cloud-platform'> <span style="color:red;"> NEWEST PROJECT </span>Resume Searcher on Cloud Platform</a>
 * <a href='#geospatial-analysis-of-market-activity-in-response-to-transit-development-of-bangkok'>Geospatial Analysis of Market Activity in Response to Transit Development of Bangkok</a>
 * <a href="#listing-search-tool-on-leaflet-nodejs-web-application-to-query-assets-in-proximity-of-train-station-geojson-and-mongodb">Listing search tool on Leaflet NodeJS Web Application to Query Assets in Proximity of Train Station (GeoJSON and MongoDB)</a>
 * <a href="#temporal-chicago-crime-interactive-map-and-analysis-under-user-centric-hierarchies-r-and-shiny-module">Temporal Chicago Crime Interactive Map and Analysis under User-centric hierarchies (R and Shiny module)</a>
@@ -25,11 +25,21 @@ Storytelling, was the one that I pin essence. This is where I put my best effort
 
 
 <!-- start of projects -->
-## <a style="color:#159957;" href='http://csc575proj2.herokuapp.com'>Online Resume Searcher on Cloud Platform</a>
+## <a style="color:#159957;" href='static/resume-retrieval.html'>Resume Searcher on Cloud Platform</a>
 
-<img src="static/resume-search/resume-search-page.jpg">
+<p>
+<img style="max-height: 300px;" src="static/resume-retrieval/resume-search-page.jpg">
+<p></p>
+<img style="max-height: 300px;" src="static/resume-retrieval/resume-search-results.jpg">
+</p>
 
-The motivation was to apply text search to resumes on a live online platform in order to determine a candidate for certain jon qualifications.  Feel free to visit the link here: <a href='http://csc575proj2.herokuapp.com'>**Live Application**</a>
+The motivation was to apply text search to resumes on a live cloud platform in order to determine a candidate according to certain job qualifications. I'm using Heroku as the cloud platform and Flask as a Python Web Application Framework. Feel free to visit the link here: <a href='https://resume-retrieval.herokuapp.com'>**Live Application**</a>
+
+The project is done between a group of three students at DePaul. We have very clear roles as follows:
+* Folk (myself) - Application Architect and Platform.
+* Ivy - Literature analysis and review. Automated testing and evaluation.
+* Ray - Data modelling and retrieval algorithms  
+<a href='static/resume-retrieval.html'>**Continue Reading**</a>
 
 
 ## <a style="color:#159957;" href='static/geospatial-analysis.html'>Geospatial Analysis of Market Activity in Response to Transit Development of Bangkok</a>
