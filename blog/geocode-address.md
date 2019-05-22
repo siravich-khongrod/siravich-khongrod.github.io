@@ -1,9 +1,12 @@
 ## Geocoding Address Data to Structure Data and Retrieve Additional Attributes
 
+Here is another neat piece of code to gather a wealth of attributes from OpenStreetMap regarding location data. Nominatim is a handy tool that allows search query of name or address. The API can send over XML or JSON formatted data as shown below. This was useful in accumulating the point of interests of such location as well as validating and re-structuring address data in a standard that is uniquely identifyable.
+
 ``` R
 osm_api <- function(params) {
   params <- gsub(' ','+',paste(params))
-  getstr <- paste0('https://nominatim.openstreetmap.org/search?format=json&addressdetails=1&q=',params[1],',Chicago')
+  getstr <- paste0('https://nominatim.openstreetmap.org/search?format=json&addressdetails=1&q=',
+    params[1],',Chicago')
   resp <- GET(getstr)
   if (http_type(resp) != "application/json") {
     stop("API did not return json", call. = FALSE)
