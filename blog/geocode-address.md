@@ -15,6 +15,7 @@ osm_api <- function(params) {
 ```
 
 ### Sample Output
+<div style="font-size: 15px;">
 
 | place_id              | 171681040                                                                            |
 |-----------------------|--------------------------------------------------------------------------------------|
@@ -40,3 +41,5 @@ osm_api <- function(params) {
 | address.postcode      | 60604                                                                                |
 | address.country       | USA                                                                                  |
 | address.country_code  | us                                                                                   |
+
+</div>
