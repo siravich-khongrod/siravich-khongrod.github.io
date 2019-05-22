@@ -1,0 +1,36 @@
+picture_path: yellowstone
+preview:
+  filename: 9
+  original: 9.jpg
+  thumbnail: 9.jpg
+pictures:
+- filename: 1
+  original: 1.jpg
+  thumbnail: 1.jpg
+- filename: 2
+  original: 2.jpg
+  thumbnail: 2.jpg
+- filename: 3
+  original: 3.jpg
+  thumbnail: 3.jpg
+- filename: 4
+  original: 4.jpg
+  thumbnail: 5.jpg
+- filename: 5
+  original: 5.jpg
+  thumbnail: 5.jpg
+- filename: 6
+  original: 6.jpg
+  thumbnail: 6.jpg
+- filename: 7
+  original: 7.jpg
+  thumbnail: 7.jpg
+- filename: 8
+  original: 8.jpg
+  thumbnail: 8.jpg
+- filename: 9
+  original: 9.jpg
+  thumbnail: 9.jpg
+- filename: 10
+  original: 10.jpg
+  thumbnail: 10.jpg

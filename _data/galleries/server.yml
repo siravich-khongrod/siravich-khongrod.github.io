@@ -1,0 +1,18 @@
+picture_path: server
+preview:
+  filename: bitcoin2
+  original: bitcoin2.jpg
+  thumbnail: bitcoin2.jpg
+pictures:
+- filename: bitcoin1
+  original: bitcoin1.jpg
+  thumbnail: bitcoin1.jpg
+- filename: bitcoin2
+  original: bitcoin2.jpg
+  thumbnail: bitcoin2.jpg
+- filename: folkserver
+  original: folkserver.jpg
+  thumbnail: folkserver.jpg
+- filename: leanserver
+  original: leanserver.jpg
+  thumbnail: leanserver.jpg

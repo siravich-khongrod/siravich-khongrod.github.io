@@ -1,0 +1,24 @@
+-
+ title: My Creative Server Playground
+ directory: server
+ preview:
+  filename: bitcoin1
+  original: bitcoin2.jpg
+  sizes:
+  thumbnail: bitcoin2.jpg
+-
+ title: My 3D Metal Jigsaw Puzzle
+ directory: jigsaw
+ preview:
+  filename: metal-jigsaw2
+  original: metal-jigsaw2.jpg
+  sizes:
+  thumbnail: metal-jigsaw2.jpg
+-
+ title: Yellowstone
+ directory: yellowstone
+ preview:
+  filename: 9
+  original: 9.jpg
+  sizes:
+  thumbnail: 9.jpg

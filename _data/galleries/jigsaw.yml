@@ -1,0 +1,36 @@
+picture_path: jigsaw
+preview:
+  filename: metal-jigsaw2
+  original: metal-jigsaw2.jpg
+  thumbnail: metal-jigsaw2.jpg
+pictures:
+- filename: bab-castle1
+  original: bab-castle1.jpg
+  thumbnail: bab-castle1.jpg
+- filename: bab-castle2
+  original: bab-castle2.jpg
+  thumbnail: bab-castle2.jpg
+- filename: bab-castle3
+  original: bab-castle3.jpg
+  thumbnail: bab-castle3.jpg
+- filename: bicycle
+  original: bicycle.jpg
+  thumbnail: bicycle.jpg
+- filename: dis-castle2
+  original: dis-castle2.jpg
+  thumbnail: dis-castle2.jpg
+- filename: metal-jigsaw1
+  original: metal-jigsaw1.jpg
+  thumbnail: metal-jigsaw1.jpg
+- filename: metal-jigsaw2
+  original: metal-jigsaw2.jpg
+  thumbnail: metal-jigsaw2.jpg
+- filename: metal-jigsaw3
+  original: metal-jigsaw3.jpg
+  thumbnail: metal-jigsaw3.jpg
+- filename: metal-jigsaw4
+  original: metal-jigsaw4.jpg
+  thumbnail: metal-jigsaw4.jpg
+- filename: gundam
+  original: gundam.jpg
+  thumbnail: gundam.jpg
