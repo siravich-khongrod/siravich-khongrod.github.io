@@ -1,6 +1,6 @@
 ### Fetching Census Data from American Community Survey (ACS)
 
-APIs is a great way of retrieving information especially throught the internet of overwhelming information. Today, demonstrate a way to retrieve information from the American Comminuty Survey using an iterative approach. The reason for this design is because the API have changed over the year and it is no longer possible to retrieve data for all Census Tract for a large unit of geography. In this case, I would like to retrieve data for Michigan State.
+Using API is a great of retrieving information especially throught the internet of overwhelming information. Today, I demonstrate a way to retrieve information from the American Comminuty Survey using an iterative approach. The reason for this design is because the API have changed over the year and it is no longer possible to retrieve data for all Census Tract for a large unit of geography. In this case, I would like to retrieve data for Michigan State.
 
 There are two major parts of R Coding. The first is the function takes in the search parameter which is the table name and the geography area. The second is the function caller which accepts data from the ACS API and further process the data. For proprietary reasons I cannot disclose the calculations the snippets below would allow retrieving a large dataset of large geographies. This information is useful for doing geospatial analysis, resulting in reports that helps policy makers, developers and other stakeholders to make better decision based on data of the American population.
 
