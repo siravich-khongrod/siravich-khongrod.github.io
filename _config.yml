@@ -1,4 +1,32 @@
-theme: jekyll-theme-cayman
+#theme: jekyll-theme-cayman
 
+# Site settings
 title: Siravich Khongrod Portfolio
+email: skhongro@mail.depaul.edu
+url: https://siravich-khongrod.github.io
 #description: [A short description of your site's purpose]
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary-dark: '#000000'
+  links: '#219ab3'
+
+sass:
+    sass_dir: _sass
+    style: :compressed
+
+# Footer settings
+footer: Siravich Khongrod
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: https://twitter.com/SBootstrap
+  - title: facebook
+    url:
+  - title: github
+    url: https://github.com/siravich-khongrod
+
+# Build settings
+markdown: kramdown
+permalink: pretty
