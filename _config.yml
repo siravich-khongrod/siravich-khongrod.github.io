@@ -2,3 +2,5 @@ theme: jekyll-theme-cayman
 
 title: Siravich Khongrod Portfolio
 #description: [A short description of your site's purpose]
+plugins:
+  - jekyll-seo-tag
