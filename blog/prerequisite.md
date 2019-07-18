@@ -1,4 +1,6 @@
-# Figuring out what to study first from the course list
+# Figuring out what to study first
+
+![Sankey Diagram Example](sankey-example.png)
 
 The first time I went into the University website to browse through the course, I had difficulties in finding the course I should study first. Although the courses are in categories, the pre-requisites are not explicitly displayed. I have to click through each subject, browse the content and take note of the prerequisite on paper. 
 
@@ -99,9 +101,7 @@ def get_prereq(subjects):
             if(pageContent.text.lower().rfind("prerequisite")>0):
                 prereq = pageContent.text.lower()[pageContent.text.lower().rfind("prerequisite"):]
                 if('none' not in str.split(prereq)):
-#                     print(prereq)
                     prereq = prereq_parser(prereq.upper(),subjects)
-#                     print(prereq)
                     PRE.append([subject,prereq])
                 else:PRE.append([subject,[]])
             else:PRE.append([subject,[]])
