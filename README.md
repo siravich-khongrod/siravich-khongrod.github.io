@@ -19,7 +19,7 @@ Storytelling, was the one that I pin essenceand put my best effort. I demonstrat
 
 ## Blog
 * <a href='blog/automating-download-on-American-Fact-Finder.html'>Automating Downloads in American Fact Finder</a>
-* <a href='blog/prerequisite.html'>Figuring out what to study first with Web Scrapping</a>
+* <a href='blog/prerequisite.html'>Figuring out what to study with Web Scrapping</a>
 * <a href='blog/acs-api.html'>Getting Large Datasets from American Community Survey Census Data</a>
 * <a href='blog/bigram-dice.html'>Using BiGrams and Dice Coefficient to Aid Joining Survey Data</a>
 * <a href='blog/spatial-join.html'>Spatial Joining with R</a>
