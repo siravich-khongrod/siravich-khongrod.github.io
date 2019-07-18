@@ -1,3 +1,9 @@
+# Figuring out what to study first from the course list
+
+The first time I went into the University website to browse through the course, I had difficulties in finding the course I should study first. Although the courses are in categories, the pre-requisites are not explicitly displayed. I have to click through each subject, browse the content and take note of the prerequisite on paper. 
+
+I think having a simple list that displays the course name with the prerequisite would help students to better plan their course so I decided to Scrape this data from the school website and create a visualization that is more user friendly.
+
 <div>
 <svg viewBox="0,0,975,720" width="975" height="720" style="background: rgb(255, 255, 255); width: 100%; height: auto;"><g><rect x="1" y="475" height="135.00000000000023" width="13" fill="rgb(185, 185, 185)"><title>CSC 412
 3</title></rect><rect x="641" y="363.05303406198345" height="90" width="13" fill="rgb(185, 185, 185)"><title>CSC 578
@@ -41,6 +47,46 @@
 1</title></g><g stroke="rgb(221, 221, 221)" style="mix-blend-mode: multiply;"><path d="M335,537.4999999999998C487.5,537.4999999999998,487.5,540.5530340619833,640,540.5530340619833" stroke-width="45"></path><title>DSC 423 → DSC 480
 1</title></g></g><g style="font: 10px sans-serif;"><text x="21" y="542.5000000000001" dy="0.35em" text-anchor="start">CSC 412<tspan fill-opacity="0.7"> 3</tspan></text><text x="634" y="408.05303406198345" dy="0.35em" text-anchor="end">CSC 578<tspan fill-opacity="0.7"> 2</tspan></text><text x="341" y="304.9999999999999" dy="0.35em" text-anchor="start">DSC 478<tspan fill-opacity="0.7"> 2</tspan></text><text x="21" y="117.49999999999999" dy="0.35em" text-anchor="start">CSC 401<tspan fill-opacity="0.7"> 5</tspan></text><text x="341" y="104.99999999999994" dy="0.35em" text-anchor="start">DSC 465<tspan fill-opacity="0.7"> 2</tspan></text><text x="21" y="352.5" dy="0.35em" text-anchor="start">IT 403<tspan fill-opacity="0.7"> 5</tspan></text><text x="341" y="27.49999999999998" dy="0.35em" text-anchor="start">CSC 452<tspan fill-opacity="0.7"> 1</tspan></text><text x="341" y="514.9999999999998" dy="0.35em" text-anchor="start">DSC 423<tspan fill-opacity="0.7"> 2</tspan></text><text x="341" y="382.49999999999983" dy="0.35em" text-anchor="start">HCI 512<tspan fill-opacity="0.7"> 1</tspan></text><text x="634" y="485.55303406198345" dy="0.35em" text-anchor="end">DSC 425<tspan fill-opacity="0.7"> 1</tspan></text><text x="954" y="410.91211222228054" dy="0.35em" text-anchor="end">DSC 540<tspan fill-opacity="0.7"> 2</tspan></text><text x="341" y="437.49999999999983" dy="0.35em" text-anchor="start">DSC 484<tspan fill-opacity="0.7"> 1</tspan></text><text x="341" y="614.9999999999999" dy="0.35em" text-anchor="start">CSC 481<tspan fill-opacity="0.7"> 2</tspan></text><text x="634" y="595.5530340619832" dy="0.35em" text-anchor="end">CSC 482<tspan fill-opacity="0.7"> 1</tspan></text><text x="634" y="177.71804509048042" dy="0.35em" text-anchor="end">CSC 555<tspan fill-opacity="0.7"> 2</tspan></text><text x="341" y="692.5" dy="0.35em" text-anchor="start">CSC 577<tspan fill-opacity="0.7"> 1</tspan></text><text x="341" y="204.9999999999999" dy="0.35em" text-anchor="start">DSC 433<tspan fill-opacity="0.7"> 2</tspan></text><text x="634" y="650.5530340619832" dy="0.35em" text-anchor="end">CSC 528<tspan fill-opacity="0.7"> 1</tspan></text><text x="634" y="540.5530340619832" dy="0.35em" text-anchor="end">DSC 480<tspan fill-opacity="0.7"> 1</tspan></text></g></svg>
 </div>
+
+To do this, I will use the most common parsing library, <a href='https://www.crummy.com/software/BeautifulSoup/bs4/doc/'>BeautifulSoup</a> 
+``` Python
+import requests
+from bs4 import BeautifulSoup
+```
+
+First, we want a list of all majors. I will start all master programs in the School of Computing and Digital Media.
+``` Python
+link='https://www.cdm.depaul.edu/academics/Pages/MastersDegrees.aspx'
+r=requests.get(link)
+soup = BeautifulSoup(r.text, 'html.parser')
+content = soup.findAll("div", {"class": "Index-Item"})
+content = soup.findAll("ul", {"class": "dropdown-menu"})
+uls = BeautifulSoup(str(content), 'html.parser')
+
+for a in uls.findAll('a'):
+    print('https://www.cdm.depaul.edu'+a['href'])
+```
+Here is the list of url that has the requirements
+
+|---|
+| https://www.cdm.depaul.edu/academics/Pages/Current/Requirements-MA-In-Animation-Motion-Graphics.aspx |
+| https://www.cdm.depaul.edu/academics/Pages/Current/Requirements-MA-In-Animation-Technical-Artist.aspx |
+| https://www.cdm.depaul.edu/academics/Pages/Current/Requirements-MA-In-Animation-Traditional-Animation.aspx |
+| https://www.cdm.depaul.edu/academics/Pages/Current/Requirements-MA-In-Animation-3D-Animation.aspx |
+| https://www.cdm.depaul.edu/academics/Pages/Current/Requirements-MS-in-Cybersecurity-Computer-Security.aspx |
+| https://www.cdm.depaul.edu/academics/Pages/Current/Requirements-MS-in-Cybersecurity-Compliance.aspx |
+| https://www.cdm.depaul.edu/academics/Pages/Current/Requirements-MS-in-Cybersecurity-Networking-and-Infrastructure.aspx |
+| https://www.cdm.depaul.edu/academics/Pages/Current/Requirements-MS-In-Data-Science-Computational-Methods.aspx |
+| https://www.cdm.depaul.edu/academics/Pages/Current/Requirements-MS-In-Data-Science-Health-Care.aspx |
+| https://www.cdm.depaul.edu/academics/Pages/Current/Requirements-MS-In-Data-Science-Hospitality.aspx |
+| https://www.cdm.depaul.edu/academics/Pages/Current/Requirements-MS-In-Data-Science-Marketing.aspx |
+| https://www.cdm.depaul.edu/academics/Pages/Current/Requirements-MS-in-Film-and-Television-Cinematography.aspx |
+| https://www.cdm.depaul.edu/academics/Pages/Current/Requirements-MS-in-Film-and-Television-Post-Production.aspx |
+| https://www.cdm.depaul.edu/academics/Pages/Current/Requirements-MS-in-Film-and-Television-Sound.aspx |
+| https://www.cdm.depaul.edu/academics/Pages/Current/Requirements-MS-SE-Entrepreneurship.aspx |
+| https://www.cdm.depaul.edu/academics/Pages/Current/Requirements-MS-SE-Real-Time-Game-Systems.aspx |
+| https://www.cdm.depaul.edu/academics/Pages/Current/Requirements-MS-SE-Software-Architecture.aspx |
+| https://www.cdm.depaul.edu/academics/Pages/Current/Requirements-MS-SE-Software-Development.aspx |
 
 ``` Python
 def get_course_req(link):
