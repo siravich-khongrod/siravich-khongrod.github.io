@@ -1,0 +1,685 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.18.1219.1533                               -->
+<workbook source-build='2018.3.2 (20183.18.1219.1533)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SpatialFileLayer />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='lakeview_melt.csv+ (Multiple Connections)' inline='true' name='federated.19buk7d028b6n9187pr431lkgtos' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='lakeview_melt' name='textscan.1nozphs0elqsve14r6e990v0fjdk'>
+            <connection class='textscan' directory='C:/Users/skhongro.DPU/Documents/GitHub/ThaiGIS' filename='lakeview_melt.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='tl_2018_17_tract' name='ogrdirect.0tnccly0g3l8dm15ptr1k0l1a96t'>
+            <connection class='ogrdirect' directory='C:/Users/skhongro.DPU/Documents/GitHub/siravich-khongrod.github.io/blog/res/IL Tracts 2018 Tiger' filename='tl_2018_17_tract.shp' ogr-grid-shift-folder='C:\Program Files\Tableau\Tableau 2018.3\local\proj4' password='' server='' tablename='' />
+          </named-connection>
+          <named-connection caption='lakeview17race' name='textscan.0kygube0jvncwo1h707v50080oo5'>
+            <connection class='textscan' directory='C:/Users/skhongro.DPU/Documents/GitHub/ThaiGIS' filename='lakeview17race.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[lakeview_melt.csv].[TRACT.FIPS.10.NBR]' />
+              <expression op='[lakeview17race.csv].[TRACT.FIPS.10.NBR]' />
+            </expression>
+          </clause>
+          <relation join='inner' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[lakeview_melt.csv].[TRACT.FIPS.10.NBR]' />
+                <expression op='[tl_2018_17_tract.shp].[GEOID]' />
+              </expression>
+            </clause>
+            <relation connection='textscan.1nozphs0elqsve14r6e990v0fjdk' name='lakeview_melt.csv' table='[lakeview_melt#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                <column datatype='integer' name='F1' ordinal='0' />
+                <column datatype='string' name='TRACT.FIPS.10.NBR' ordinal='1' />
+                <column datatype='string' name='variable' ordinal='2' />
+                <column datatype='integer' name='value' ordinal='3' />
+              </columns>
+            </relation>
+            <relation connection='ogrdirect.0tnccly0g3l8dm15ptr1k0l1a96t' name='tl_2018_17_tract.shp' table='[tl_2018_17_tract.shp]' type='table'>
+              <columns>
+                <column datatype='string' name='STATEFP' ordinal='0' />
+                <column datatype='string' name='COUNTYFP' ordinal='1' />
+                <column datatype='string' name='TRACTCE' ordinal='2' />
+                <column datatype='string' name='GEOID' ordinal='3' />
+                <column datatype='string' name='NAME' ordinal='4' />
+                <column datatype='string' name='NAMELSAD' ordinal='5' />
+                <column datatype='string' name='MTFCC' ordinal='6' />
+                <column datatype='string' name='FUNCSTAT' ordinal='7' />
+                <column datatype='integer' name='ALAND' ordinal='8' />
+                <column datatype='integer' name='AWATER' ordinal='9' />
+                <column datatype='string' name='INTPTLAT' ordinal='10' />
+                <column datatype='string' name='INTPTLON' ordinal='11' />
+                <column datatype='spatial' name='Geometry' ordinal='12' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='textscan.0kygube0jvncwo1h707v50080oo5' name='lakeview17race.csv' table='[lakeview17race#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='TRACT.FIPS.10.NBR' ordinal='1' />
+              <column datatype='integer' name='Total_Pop' ordinal='2' />
+              <column datatype='integer' name='NonH_White' ordinal='3' />
+              <column datatype='integer' name='NonH_Black' ordinal='4' />
+              <column datatype='integer' name='Hispanic' ordinal='5' />
+              <column datatype='integer' name='NonH_Asian' ordinal='6' />
+              <column datatype='integer' name='NonH_Other' ordinal='7' />
+              <column datatype='integer' name='NonH_Two_more' ordinal='8' />
+              <column datatype='integer' name='check_race' ordinal='9' />
+              <column datatype='integer' name='non_asian' ordinal='10' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[ALAND]' value='[tl_2018_17_tract.shp].[ALAND]' />
+          <map key='[AWATER]' value='[tl_2018_17_tract.shp].[AWATER]' />
+          <map key='[COUNTYFP]' value='[tl_2018_17_tract.shp].[COUNTYFP]' />
+          <map key='[F1 (lakeview17race.csv)]' value='[lakeview17race.csv].[F1]' />
+          <map key='[F1]' value='[lakeview_melt.csv].[F1]' />
+          <map key='[FUNCSTAT]' value='[tl_2018_17_tract.shp].[FUNCSTAT]' />
+          <map key='[GEOID]' value='[tl_2018_17_tract.shp].[GEOID]' />
+          <map key='[Geometry]' value='[tl_2018_17_tract.shp].[Geometry]' />
+          <map key='[Hispanic]' value='[lakeview17race.csv].[Hispanic]' />
+          <map key='[INTPTLAT]' value='[tl_2018_17_tract.shp].[INTPTLAT]' />
+          <map key='[INTPTLON]' value='[tl_2018_17_tract.shp].[INTPTLON]' />
+          <map key='[MTFCC]' value='[tl_2018_17_tract.shp].[MTFCC]' />
+          <map key='[NAMELSAD]' value='[tl_2018_17_tract.shp].[NAMELSAD]' />
+          <map key='[NAME]' value='[tl_2018_17_tract.shp].[NAME]' />
+          <map key='[NonH_Asian]' value='[lakeview17race.csv].[NonH_Asian]' />
+          <map key='[NonH_Black]' value='[lakeview17race.csv].[NonH_Black]' />
+          <map key='[NonH_Other]' value='[lakeview17race.csv].[NonH_Other]' />
+          <map key='[NonH_Two_more]' value='[lakeview17race.csv].[NonH_Two_more]' />
+          <map key='[NonH_White]' value='[lakeview17race.csv].[NonH_White]' />
+          <map key='[STATEFP]' value='[tl_2018_17_tract.shp].[STATEFP]' />
+          <map key='[TRACT.FIPS.10.NBR (lakeview17race.csv)]' value='[lakeview17race.csv].[TRACT.FIPS.10.NBR]' />
+          <map key='[TRACT.FIPS.10.NBR]' value='[lakeview_melt.csv].[TRACT.FIPS.10.NBR]' />
+          <map key='[TRACTCE]' value='[tl_2018_17_tract.shp].[TRACTCE]' />
+          <map key='[Total_Pop]' value='[lakeview17race.csv].[Total_Pop]' />
+          <map key='[check_race]' value='[lakeview17race.csv].[check_race]' />
+          <map key='[non_asian]' value='[lakeview17race.csv].[non_asian]' />
+          <map key='[value]' value='[lakeview_melt.csv].[value]' />
+          <map key='[variable]' value='[lakeview_melt.csv].[variable]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[lakeview_melt.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[lakeview_melt.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TRACT.FIPS.10.NBR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TRACT.FIPS.10.NBR]</local-name>
+            <parent-name>[lakeview_melt.csv]</parent-name>
+            <remote-alias>TRACT.FIPS.10.NBR</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>variable</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[variable]</local-name>
+            <parent-name>[lakeview_melt.csv]</parent-name>
+            <remote-alias>variable</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>value</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[value]</local-name>
+            <parent-name>[lakeview_melt.csv]</parent-name>
+            <remote-alias>value</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATEFP</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STATEFP]</local-name>
+            <parent-name>[tl_2018_17_tract.shp]</parent-name>
+            <remote-alias>STATEFP</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTYFP</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTYFP]</local-name>
+            <parent-name>[tl_2018_17_tract.shp]</parent-name>
+            <remote-alias>COUNTYFP</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TRACTCE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TRACTCE]</local-name>
+            <parent-name>[tl_2018_17_tract.shp]</parent-name>
+            <remote-alias>TRACTCE</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GEOID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GEOID]</local-name>
+            <parent-name>[tl_2018_17_tract.shp]</parent-name>
+            <remote-alias>GEOID</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME]</local-name>
+            <parent-name>[tl_2018_17_tract.shp]</parent-name>
+            <remote-alias>NAME</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAMELSAD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAMELSAD]</local-name>
+            <parent-name>[tl_2018_17_tract.shp]</parent-name>
+            <remote-alias>NAMELSAD</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MTFCC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MTFCC]</local-name>
+            <parent-name>[tl_2018_17_tract.shp]</parent-name>
+            <remote-alias>MTFCC</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FUNCSTAT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FUNCSTAT]</local-name>
+            <parent-name>[tl_2018_17_tract.shp]</parent-name>
+            <remote-alias>FUNCSTAT</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ALAND</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ALAND]</local-name>
+            <parent-name>[tl_2018_17_tract.shp]</parent-name>
+            <remote-alias>ALAND</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AWATER</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AWATER]</local-name>
+            <parent-name>[tl_2018_17_tract.shp]</parent-name>
+            <remote-alias>AWATER</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>INTPTLAT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[INTPTLAT]</local-name>
+            <parent-name>[tl_2018_17_tract.shp]</parent-name>
+            <remote-alias>INTPTLAT</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>INTPTLON</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[INTPTLON]</local-name>
+            <parent-name>[tl_2018_17_tract.shp]</parent-name>
+            <remote-alias>INTPTLON</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[tl_2018_17_tract.shp]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[lakeview17race.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (lakeview17race.csv)]</local-name>
+            <parent-name>[lakeview17race.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TRACT.FIPS.10.NBR</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TRACT.FIPS.10.NBR (lakeview17race.csv)]</local-name>
+            <parent-name>[lakeview17race.csv]</parent-name>
+            <remote-alias>TRACT.FIPS.10.NBR</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Pop</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total_Pop]</local-name>
+            <parent-name>[lakeview17race.csv]</parent-name>
+            <remote-alias>Total_Pop</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NonH_White</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NonH_White]</local-name>
+            <parent-name>[lakeview17race.csv]</parent-name>
+            <remote-alias>NonH_White</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NonH_Black</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NonH_Black]</local-name>
+            <parent-name>[lakeview17race.csv]</parent-name>
+            <remote-alias>NonH_Black</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hispanic</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hispanic]</local-name>
+            <parent-name>[lakeview17race.csv]</parent-name>
+            <remote-alias>Hispanic</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NonH_Asian</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NonH_Asian]</local-name>
+            <parent-name>[lakeview17race.csv]</parent-name>
+            <remote-alias>NonH_Asian</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NonH_Other</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NonH_Other]</local-name>
+            <parent-name>[lakeview17race.csv]</parent-name>
+            <remote-alias>NonH_Other</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NonH_Two_more</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NonH_Two_more]</local-name>
+            <parent-name>[lakeview17race.csv]</parent-name>
+            <remote-alias>NonH_Two_more</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>check_race</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[check_race]</local-name>
+            <parent-name>[lakeview17race.csv]</parent-name>
+            <remote-alias>check_race</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>non_asian</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[non_asian]</local-name>
+            <parent-name>[lakeview17race.csv]</parent-name>
+            <remote-alias>non_asian</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Aland' datatype='integer' name='[ALAND]' role='measure' type='quantitative' />
+      <column caption='Awater' datatype='integer' name='[AWATER]' role='measure' type='quantitative' />
+      <column caption='Countyfp' datatype='string' name='[COUNTYFP]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Funcstat' datatype='string' name='[FUNCSTAT]' role='dimension' type='nominal' />
+      <column caption='Geoid' datatype='string' name='[GEOID]' role='dimension' type='nominal' />
+      <column caption='Intptlat' datatype='string' name='[INTPTLAT]' role='dimension' type='nominal' />
+      <column caption='Intptlon' datatype='string' name='[INTPTLON]' role='dimension' type='nominal' />
+      <column caption='Mtfcc' datatype='string' name='[MTFCC]' role='dimension' type='nominal' />
+      <column caption='Namelsad' datatype='string' name='[NAMELSAD]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[NAME]' role='dimension' type='nominal' />
+      <column caption='NonH Asian' datatype='integer' name='[NonH_Asian]' role='measure' type='quantitative' />
+      <column caption='NonH Black' datatype='integer' name='[NonH_Black]' role='measure' type='quantitative' />
+      <column caption='NonH Other' datatype='integer' name='[NonH_Other]' role='measure' type='quantitative' />
+      <column caption='NonH Two more' datatype='integer' name='[NonH_Two_more]' role='measure' type='quantitative' />
+      <column caption='NonH White' datatype='integer' name='[NonH_White]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Statefp' datatype='string' name='[STATEFP]' role='dimension' type='nominal' />
+      <column caption='Tract.Fips.10.Nbr' datatype='string' default-role='measure' default-type='quantitative' name='[TRACT.FIPS.10.NBR]' role='dimension' type='nominal' />
+      <column caption='Tractce' datatype='string' name='[TRACTCE]' role='dimension' type='nominal' />
+      <column caption='Total Pop' datatype='integer' name='[Total_Pop]' role='measure' type='quantitative' />
+      <column caption='Check Race' datatype='integer' name='[check_race]' role='measure' type='quantitative' />
+      <column caption='Value' datatype='integer' name='[value]' role='measure' type='quantitative' />
+      <column caption='Variable' datatype='string' name='[variable]' role='dimension' type='nominal' />
+      <column-instance column='[variable]' derivation='None' name='[none:variable:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.471698' measure-ordering='alphabetic' measure-percentage='0.528302' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:variable:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Hispanic&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;non_asian&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Total_Pop&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;NonH_Two_more&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;NonH_Other&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;NonH_Black&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;NonH_White&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;NonH_Asian&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource inline='true' name='OpenStreetMap WMS' source-platform='win' version='18.1'>
+      <connection class='OGC-WMS' description='http://ows.terrestris.de/osm/service' full-url='http://ows.terrestris.de/osm/service' inline='true' offline='' port='80' server='ows.terrestris.de' service='http' tileset='US\normal' url='/osm/service' use-tiled-maps='true' />
+      <languages />
+      <properties />
+      <map-styles />
+      <mapsource-defaults version='18.1'>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='OSM-WMS' value='true' />
+          </style-rule>
+        </style>
+      </mapsource-defaults>
+    </mapsource>
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='lakeview_melt.csv+ (Multiple Connections)' name='federated.19buk7d028b6n9187pr431lkgtos' />
+          </datasources>
+          <mapsources>
+            <mapsource name='OpenStreetMap WMS' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.19buk7d028b6n9187pr431lkgtos'>
+            <column datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column caption='Total Pop' datatype='integer' name='[Total_Pop]' role='measure' type='quantitative' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[variable]' derivation='None' name='[none:variable:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total_Pop]' derivation='Sum' name='[sum:Total_Pop:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[value]' derivation='Sum' name='[sum:value:qk]' pivot='key' type='quantitative' />
+            <column caption='Value' datatype='integer' name='[value]' role='measure' type='quantitative' />
+            <column caption='Variable' datatype='string' name='[variable]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19buk7d028b6n9187pr431lkgtos].[none:variable:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:variable:nk]' member='&quot;non_asian&quot;' />
+              <groupfilter function='member' level='[none:variable:nk]' member='&quot;NonH_Asian&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.19buk7d028b6n9187pr431lkgtos].[none:variable:nk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.19buk7d028b6n9187pr431lkgtos].[Latitude (generated)]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='OSM-WMS' value='true' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.19buk7d028b6n9187pr431lkgtos].[clct:Geometry:nk]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.19buk7d028b6n9187pr431lkgtos].[Latitude (generated)]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.19buk7d028b6n9187pr431lkgtos].[sum:Total_Pop:qk]' />
+              <lod column='[federated.19buk7d028b6n9187pr431lkgtos].[clct:Geometry:nk]' />
+              <geometry column='[federated.19buk7d028b6n9187pr431lkgtos].[clct:Geometry:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-family' value='Tableau Bold' />
+                <format attr='color' value='#00007f' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='39' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.19buk7d028b6n9187pr431lkgtos].[Latitude (generated)]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.19buk7d028b6n9187pr431lkgtos].[none:variable:nk]' />
+              <size column='[federated.19buk7d028b6n9187pr431lkgtos].[sum:Total_Pop:qk]' />
+              <text column='[federated.19buk7d028b6n9187pr431lkgtos].[sum:value:qk]' />
+              <lod column='[federated.19buk7d028b6n9187pr431lkgtos].[clct:Geometry:nk]' />
+              <wedge-size column='[federated.19buk7d028b6n9187pr431lkgtos].[sum:value:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='5.2192649841308594' />
+                <format attr='mark-transparency' value='193' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.19buk7d028b6n9187pr431lkgtos].[Latitude (generated)] + [federated.19buk7d028b6n9187pr431lkgtos].[Latitude (generated)])</rows>
+        <cols>[federated.19buk7d028b6n9187pr431lkgtos].[Longitude (generated)]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.19buk7d028b6n9187pr431lkgtos].[none:variable:nk]' type='color' />
+            <card pane-specification-id='2' param='[federated.19buk7d028b6n9187pr431lkgtos].[sum:Total_Pop:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{580638EA-2623-460A-BD04-6166EA62D212}' />
+    </window>
+  </windows>
+</workbook>
