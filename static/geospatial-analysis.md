@@ -3,7 +3,7 @@
 The objective is to analyse the market activity of real estate developer from data of condominium projects that are built near the train station in Bangkok. The first part aims to study the overall pattern by the operational status of the train system. Some patterns of market activity of real estate development are expected to co-exist corresponding to the development of new trains. The second part aims to investigate the area that has higher market activity and conduct an in-depth analysis of the project development in those areas as well as validating if it corresponds to the same expected pattern of having an inverse relationship between price and distance to the train station.
 
 <p>
-<img src="geospatial-analysis-of-market-activity-in-response-to-transit-development-of-bangkok/bangkok-overall-spatial-analysis.png"/>
+<img src="geospatial-analysis/bangkok-overall-spatial-analysis.png"/>
 </p>
 
 
@@ -11,7 +11,7 @@ Overview
 In 2018, these are the stations that are under construction. The routes are ones that operational, under construction and planned for construction in future.
 
 <p>
-<img src="geospatial-analysis-of-market-activity-in-response-to-transit-development-of-bangkok/transit-under-construction.png"/>
+<img src="geospatial-analysis/transit-under-construction.png"/>
 </p>
 
 Train Projects Under Construction
@@ -45,13 +45,13 @@ For each listing, the distance to the nearest train station was calculated using
 For the price, the starting price was initially available. The distribution is right skewed with range 990,000 to 69,000,000. The units are in Thailand Baht currency. In addition, five data points were removed in the data cleaning. Two in the lower range is extremely low (only 2, and 4 Thai Baht) and are considered as input errors in the website. The other three in the higher region is valid but is extremely high, so it will not be considered in the analysis. 
 
 <p>
-<img src="geospatial-analysis-of-market-activity-in-response-to-transit-development-of-bangkok/condo-price-distribution.png"/>
+<img src="geospatial-analysis/condo-price-distribution.png"/>
 </p>
 
 It should be noted that only 30% of the data has a start date of construction and most projects began construction in 2018.
 
 <p>
-<img src="geospatial-analysis-of-market-activity-in-response-to-transit-development-of-bangkok/condo-construction-period.png"/>
+<img src="geospatial-analysis/condo-construction-period.png"/>
 </p>
 
 ## Overall Pricing Analysis of Condominiums near Train Stations
@@ -64,7 +64,7 @@ The West side across the river seems to be less populated compared to the East. 
 In Bangkok. the condominiums with lowest price group are considerably far from the train stations and are at the upper region far from the CBD and at the far West side near the new train development. In Nonthaburi province, there is a considerable number of condominiums along the only route that went operational recently in 2018. There are not much condominium projects near the planned train development apart from the Northeast.
 
 <p>
-<img src="geospatial-analysis-of-market-activity-in-response-to-transit-development-of-bangkok/bangkok-condo-price-overall-analysis.png"/>
+<img src="geospatial-analysis/bangkok-condo-price-overall-analysis.png"/>
 </p>
 
 
@@ -73,13 +73,13 @@ In Bangkok. the condominiums with lowest price group are considerably far from t
 This map was created using the datapoints that are within two kilometer radius of the train stations that are under construction. The route under construction is highlighted in light blue. The range of condominium price is 699,000 to 4,200,000 million Thai baht. The overall pattern is trivial that the closer to the CBD, the more expensive the price of condominium. There seems to be more variance in price which form clusters in various part of Bangkok outer skirts.
 
 <p>
-<img src="geospatial-analysis-of-market-activity-in-response-to-transit-development-of-bangkok/bangkok-near-trainsit-condo-spatial-analysis.png"/>
+<img src="geospatial-analysis/bangkok-near-trainsit-condo-spatial-analysis.png"/>
 </p>
 
 There are six clusters that are displayed in this visualization. The cluster formations are namely Bangkae, Tha Phra, Arun Amarin, Rama 7, Lad Phrao and Bang Khen. These are ordered from left to right according to this image. 
 
 <p>
-<img src="geospatial-analysis-of-market-activity-in-response-to-transit-development-of-bangkok/bangkok-condo-development-clusters.png"/>
+<img src="geospatial-analysis/bangkok-condo-development-clusters.png"/>
 </p>
 
 
