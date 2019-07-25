@@ -1,4 +1,4 @@
-# Figuring out what to study with Web Scrapping
+# Figuring out study plan with Web Scrapping
 
 ![Sankey Diagram Example](sankey-example.png)
 
