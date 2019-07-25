@@ -499,15 +499,15 @@
       <column caption='Value' datatype='integer' name='[value]' role='measure' type='quantitative' />
       <column caption='Variable' datatype='string' name='[variable]' role='dimension' type='nominal' />
       <column-instance column='[variable]' derivation='None' name='[none:variable:nk]' pivot='key' type='nominal' />
-      <layout dim-ordering='alphabetic' dim-percentage='0.471698' measure-ordering='alphabetic' measure-percentage='0.528302' show-structure='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.447799' measure-ordering='alphabetic' measure-percentage='0.552201' show-structure='true' />
       <style>
         <style-rule element='mark'>
           <encoding attr='color' field='[none:variable:nk]' type='palette'>
-            <map to='#4e79a7'>
-              <bucket>&quot;Hispanic&quot;</bucket>
+            <map to='#1170aa'>
+              <bucket>&quot;NonH_Asian&quot;</bucket>
             </map>
             <map to='#4e79a7'>
-              <bucket>&quot;non_asian&quot;</bucket>
+              <bucket>&quot;Hispanic&quot;</bucket>
             </map>
             <map to='#4e79a7'>
               <bucket>&quot;Total_Pop&quot;</bucket>
@@ -518,14 +518,14 @@
             <map to='#76b7b2'>
               <bucket>&quot;NonH_Other&quot;</bucket>
             </map>
+            <map to='#a3cce9'>
+              <bucket>&quot;non_asian&quot;</bucket>
+            </map>
             <map to='#e15759'>
               <bucket>&quot;NonH_Black&quot;</bucket>
             </map>
             <map to='#edc948'>
               <bucket>&quot;NonH_White&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;NonH_Asian&quot;</bucket>
             </map>
           </encoding>
         </style-rule>
@@ -598,6 +598,11 @@
             <encodings>
               <lod column='[federated.19buk7d028b6n9187pr431lkgtos].[clct:Geometry:nk]' />
             </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-halo' value='true' />
+              </style-rule>
+            </style>
           </pane>
           <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.19buk7d028b6n9187pr431lkgtos].[Latitude (generated)]'>
             <view>
@@ -620,6 +625,8 @@
                 <format attr='mark-transparency' value='39' />
                 <format attr='mark-labels-cull' value='true' />
                 <format attr='mark-labels-show' value='true' />
+                <format attr='has-halo' value='true' />
+                <format attr='mark-color' value='#86bcb6' />
               </style-rule>
             </style>
           </pane>
@@ -637,11 +644,17 @@
               <wedge-size column='[federated.19buk7d028b6n9187pr431lkgtos].[sum:value:qk]' />
             </encodings>
             <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='auto' />
+              </style-rule>
               <style-rule element='mark'>
-                <format attr='size' value='5.2192649841308594' />
+                <format attr='size' value='3.7016575336456299' />
                 <format attr='mark-transparency' value='193' />
+                <format attr='mark-labels-cull' value='false' />
                 <format attr='mark-labels-show' value='true' />
-                <format attr='mark-labels-cull' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#666666' />
+                <format attr='has-halo' value='true' />
               </style-rule>
             </style>
           </pane>
