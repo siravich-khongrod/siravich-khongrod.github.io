@@ -2,7 +2,7 @@
 ![output](https://github.com/siravich-khongrod/siravich-khongrod.github.io/blob/master/blog/res/Asians%20in%20Lakeview.jpg?raw=true)
 ![output](https://github.com/siravich-khongrod/siravich-khongrod.github.io/blob/master/blog/res/Asians%20in%20Uptown.jpg?raw=true)
 
-Part of my work at the Instutute for Housing Studies is mapping. It has been a challenge when there are many variables to visualize on a map. Having a cartographic map can sometime be misleading because we perceive not only the color contrast but the area of shapes drawn on the map.
+Part of my work at the Instutute for Housing Studies is mapping. It has been a challenge when there are many variables to visualize on a map. Having a cartographic map can sometimes be misleading because we perceive not only the color contrast but the area of shapes drawn on the map.
 
 I was making a map that visualizes population and the share of population with certain characteristics. I would like to share my methodology so I made another visualization for demographic composition of ethnicity for a community area.
 
