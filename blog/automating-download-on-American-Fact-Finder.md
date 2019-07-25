@@ -1,12 +1,12 @@
 # Automating Downloads on American Fact Finder
 #### 2019/07/18
 
-American Fact Finder is a handy tool that allows the user to navigate to data tables of census data. Despite having the API for downloading from the American Community Survey, I occasionally need to download data from the Fact Finder simply because I do not know which dataset I was looking for. As far as I know, the API does not provide a tool that allow searching using keywords such as 'tenure'.
+American Fact Finder is a handy tool that allows the user to navigate to data tables of census data. Despite having the API for downloading from the American Community Survey, I occasionally need to download data from the Fact Finder simply because I do not know which dataset I was looking for. As far as I know, the API does not provide a tool that allow searching using keywords such as 'tenure'. I decided to automate this process because I had to validate data. The validation process is to aggregate data to a larger geographical area and compare them with the aggregation from Fact Finder.
 
 Let's get started. The Fact Finder is an asynchronous web application, meaning that parts of the page loads up after the request was sent by the client.
 This implies that I cannot use the requests library to download the tables.
 For this reason, I used Selenium webdriver to create an instance of an automated browser to navigate to the downloads. 
-The snnippet below is to configure the browser and browse the search page.
+The snippet below is to configure the browser and browse the search page.
 
 ``` python
 import time
@@ -18,8 +18,11 @@ browser.get(link)
 
 Next is the major part of automation. The way this works is by looking for the search box, input the keyword, click search, and click the checkboxes on results for download.
 In this case, I want to download the five year estimate ACS data of the tables I listed on first line from 2009 to 2010.
-Note that there is a limitation of 40 maximum tables on a single download. It is possible to simply download one batch at a time or create multiple instances of automated browser.
-Sit back and enjoy the auto clicking.
+Note that there is a limitation of 40 maximum tables on a single download. To start the process, manually select the geography, and randomly choose a table. The reason for having the table is because the algorithm would remove one filter on everytime a table is to be fetched. The table is the first filter, the geography is the second.
+
+![](factfinder-choose_geo.JPG)
+
+Execute the codes below. Sit back and enjoy the auto clicking.
 
 ``` python
 tbl_nbrs = ["B01001","B15002","B03002","B17001","B23001","B25002","B25004","B25024","B25032","B25007","B11016","B25106","B25064","B25063","B19013","B19001","B25072","B19019","B19001"]
@@ -43,7 +46,7 @@ for tbl_nbr in tbl_nbrs[1:5]:
             checkboxes[x].click()
 ```
 
-After the tables have been chosen, you can now click download. Since I am downloading 40 tables at a time, I do not want to wait until all files a processed before I can hit download.
+After the tables have been chosen, you can now click download. Since I am downloading 40 tables at a time, I do not want to wait until all files a processed before I can hit download button.
 This is why I added some extra codes to watch the button for me.
 Although this is not a good design, I just only want a quick piece of code that works.
 If this were to be executed regularly I would recommend using <a href="https://selenium-python.readthedocs.io/waits.html">waits</a> to wait for a DOM element to be ready.
