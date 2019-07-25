@@ -4,7 +4,7 @@
 
 Part of my work at the Instutute for Housing Studies is mapping. It has been a challenge when there are many variables to visualize on a map. Having a cartographic map can sometimes be misleading because we perceive not only the color contrast but the area of shapes drawn on the map.
 
-I was making a map that visualizes population and the share of population with certain characteristics. I would like to share my methodology so I made another visualization for demographic composition of ethnicity for a community area.
+I was making a map that visualizes population and the share of population with certain characteristics. I would like to share my methodology so I made another visualization for demographic composition of ethnicity for community areas in Chicago.
 
 Data
 ``` R
