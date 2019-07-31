@@ -4,3 +4,5 @@ title: Siravich Khongrod Portfolio
 #description: [A short description of your site's purpose]
 plugins:
   - jekyll-seo-tag
+
+google_analytics: UA-66802675-3
