@@ -1,7 +1,8 @@
 # Automation for Generating Plots from Census Data
 
-|B25063Gross_Rent_in_brackets    | https://plot.ly/~siravich-khongrod/46/    | =CONCATENATE(LEFT(B7,LEN(B7)-1),".png") | =CONCATENATE("siravich-khongrod:",LEFT(RIGHT(B7,3),2)) |
+|B25063Gross_Rent_in_brackets|https://plot.ly/~siravich-khongrod/46/|https://plot.ly/~siravich-khongrod/46.png|siravich-khongrod:46	"<div>    <a href=""https://plot.ly/~siravich-khongrod/46/"" target=""_blank"" title=""B25063Gross_Rent_in_brackets"" style=""display: block; text-align: center;""><img src=""https://plot.ly/~siravich-khongrod/46.png"" alt=""B25063Gross_Rent_in_brackets"" style=""max-width: 100%;width: 600px;""  width=""600"" onerror=""this.onerror=null;this.src='https://plot.ly/404.png';"" /></a><script data-plotly=""siravich-khongrod:46"" src=""https://plot.ly/embed.js"" async></script></div>"|
 |-----------------------------------------------------------------|-------------------------------------------|-------------------------------------------|---------------------------------------------------------|
+|B25063Gross_Rent_in_brackets    | https://plot.ly/~siravich-khongrod/46/    | =CONCATENATE(LEFT(B7,LEN(B7)-1),".png") | =CONCATENATE("siravich-khongrod:",LEFT(RIGHT(B7,3),2)) |
 |B25032Tenure_by_units_in_structure    | https://plot.ly/~siravich-khongrod/44/    | =CONCATENATE(LEFT(B8,LEN(B8)-1),".png") | =CONCATENATE("siravich-khongrod:",LEFT(RIGHT(B8,3),2)) |
 |B25024Units_in_Structure    | https://plot.ly/~siravich-khongrod/42/    | =CONCATENATE(LEFT(B9,LEN(B9)-1),".png") | =CONCATENATE("siravich-khongrod:",LEFT(RIGHT(B9,3),2)) |
 |B25007Tenure_by_Age_of_Householder    | https://plot.ly/~siravich-khongrod/40/    | =CONCATENATE(LEFT(B10,LEN(B10)-1),".png") | =CONCATENATE("siravich-khongrod:",LEFT(RIGHT(B10,3),2)) |
