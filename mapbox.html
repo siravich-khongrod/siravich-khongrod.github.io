@@ -37,11 +37,13 @@ p {
 * (information box and legend) will be displayed
 * on the page. */
 .map-overlay {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  position: relative;
+  /*position: absolute;*/
+  bottom: 0;/*
+  right: 0;*/
   background: rgba(255, 255, 255, 0.8);
-  margin-right: 20px;
+  /*margin-right: 20px;*/
+  margin: 20px;
   font-family: Arial, sans-serif;
   overflow: auto;
   border-radius: 3px;
@@ -77,9 +79,39 @@ p {
 <body>
 
 <div id='map'></div>
-<div class='map-overlay' id='features'><h2>US population density</h2>
-	<div id='pd'><p>Hover over a state!</p></div></div>
+<div class="" style="
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    position: relative;
+">
+  <button id="fly_site1" class="fly">Green Line 51st St</button>
+  <button id="fly_site2" class="fly">Kedzie Corridor</button>
+  <button id="fly_site3" class="fly">Green Line Cottage Grove-63rd St</button>
+  <button id="fly_site4" class="fly">Pink Line California</button>
+  <button id="fly_site5" class="fly">Blue Line Logan Square</button>
+</div>
 
+<div class='map-overlay' id='features'><h2>Places Surveyed</h2>
+  <div id='pd'><p>Hover over a gold parcel</p></div>
+  <div id='mtype'><p></p></div>
+</div>
+
+<style>
+.fly {
+  position: relative;
+  margin: 0px auto;
+  width: 16%;
+  height: 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 8px;
+  text-align: center;
+  color: #fff;
+  background: #ee8a65;
+}
+</style>
 
 <script>
 
@@ -98,8 +130,8 @@ map.on('load', function() {
     // make a pointer cursor
     map.getCanvas().style.cursor = 'default';
 
-    // set map bounds to the continental US
-    map.fitBounds([[-87.738,41.858], [-87.688, 41.897]]);
+    // set map bounds
+    // map.fitBounds([[-87.738,41.858], [-87.688, 41.897]]);
 
     // make a pointer cursor
     map.getCanvas().style.cursor = 'default';
@@ -110,17 +142,49 @@ map.on('load', function() {
         var states = map.queryRenderedFeatures(e.point, {
             layers: ['mapscorp-parcels']
         });
+        var mrkt = map.queryRenderedFeatures(e.point, {
+            layers: ['market-conditions']
+        });
 
         if (states.length > 0) {
-            document.getElementById('pd').innerHTML = "<h3><strong>" + 
-            "" + "</strong></h3><p><strong><em>" +
-            states[0].properties.Name16 + "<br>" +
-            states[0].properties.Name17 + "<br>" +
-            states[0].properties.Name18 + 
-            "</strong> </em></p>";
+          if(states[0].properties.Name18) {
+            var mctext = "<p><strong><em>"+states[0].properties.Name18 + "</strong> </em></p>"+"<p><strong><em>"+states[0].properties.Type18+ "</strong> </em></p>";
+          } else {
+            var mctext = 'Not surveyed in 2018';
+          }
+            document.getElementById('pd').innerHTML = "<h3><strong>" + "</strong></h3><p><strong><em>" +
+            // "2016: " + states[0].properties.Name16 + "<br>" +
+            // "2017: " + states[0].properties.Name17 + "<br>" +
+            // "2018: " + states[0].properties.Name18 + 
+            mctext;
         } else {
+          if (mrkt.length > 0) {
+            var mtext = '?'
+            switch(mrkt[0].properties.psqft2017) {
+              case 1: mtext = 'Low-cost'
+              break;
+              case 2: mtext = 'Moderate-cost'
+              break;
+              case 3: mtext = 'High-cost'
+              break;
+              default: mtext = ''
+            }
+            document.getElementById('mtype').innerHTML = "<p>" + mtext + "</p>";
+          } else {
             document.getElementById('pd').innerHTML = '<p>Hover over a gold parcel</p>';
+          }
         }
+    });
+
+    document.getElementById('fly_site1').addEventListener('click', function () {map.flyTo({center: [-87.618413,41.798634]});
+    });
+    document.getElementById('fly_site2').addEventListener('click', function () {map.flyTo({center: [-87.706067,41.879374]});
+    });
+    document.getElementById('fly_site3').addEventListener('click', function () {map.flyTo({center: [-87.605857,41.780309]});
+    });
+    document.getElementById('fly_site4').addEventListener('click', function () {map.flyTo({center: [-87.694823,41.85428]});
+    });
+    document.getElementById('fly_site5').addEventListener('click', function () {map.flyTo({center: [-87.708541,41.929728]});
     });
 
 });
