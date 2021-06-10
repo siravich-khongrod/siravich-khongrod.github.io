@@ -24,7 +24,7 @@
   thumbnail: 9.jpg
 -
  title: Certificate
- directory: yellowstone
+ directory: certificate
  preview:
   filename: Apache Spark Programming with Databricks-1
   original: Apache Spark Programming with Databricks-1.jpg
